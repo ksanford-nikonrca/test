@@ -1,0 +1,2 @@
+ila_0.vhd,vhdl,xil_defaultlib,../../../../HTGK7-NRCA-DMA.srcs/sources_1/ip/ila_0/sim/ila_0.vhd,incdir="../../../../HTGK7-NRCA-DMA.srcs/sources_1/ip/ila_0/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,2540 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7k325tfbg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xc7k325tfbg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.844 ; gain = 177.418
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port reg_addr is neither a static name nor a globally static expression [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1177]
+INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:103]
+	Parameter INIT_PATTERN_WIDTH bound to: 8 - type: integer 
+	Parameter INIT_PATTERN1 bound to: 8'b00010010 
+	Parameter INIT_PATTERN2 bound to: 8'b10011010 
+	Parameter PCIE_EXT_CLK bound to: TRUE - type: string 
+	Parameter PCIE_EXT_GT_COMMON bound to: FALSE - type: string 
+	Parameter PL_FAST_TRAIN bound to: FALSE - type: string 
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter CLKCM_CFG bound to: 1 - type: bool 
+	Parameter CLKRCV_TRST bound to: 1 - type: bool 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-113] binding component instance 'sys_clk_pcie_clk_inst' to cell 'IBUFDS_GTE2' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:730]
+	Parameter LINK_CAP_MAX_LINK_WIDTH bound to: 8 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter KEEP_WIDTH bound to: 8 - type: integer 
+	Parameter PCIE_REFCLK_FREQ bound to: 0 - type: integer 
+	Parameter PCIE_LINK_SPEED bound to: 3 - type: integer 
+	Parameter PCIE_USERCLK1_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_GT_DEVICE bound to: GTX - type: string 
+	Parameter PCIE_USE_MODE bound to: 3.0 - type: string 
+INFO: [Synth 8-3491] module 'PCIe_support' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:66' bound to instance 'pcie_support_i' of component 'PCIe_support' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:755]
+INFO: [Synth 8-638] synthesizing module 'PCIe_support' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:330]
+	Parameter LINK_CAP_MAX_LINK_WIDTH bound to: 8 - type: integer 
+	Parameter CLK_SHARING_EN bound to: FALSE - type: string 
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter KEEP_WIDTH bound to: 8 - type: integer 
+	Parameter PCIE_REFCLK_FREQ bound to: 0 - type: integer 
+	Parameter PCIE_LINK_SPEED bound to: 3 - type: integer 
+	Parameter PCIE_USERCLK1_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_GT_DEVICE bound to: GTX - type: string 
+	Parameter PCIE_USE_MODE bound to: 3.0 - type: string 
+	Parameter PCIE_ASYNC_EN bound to: FALSE - type: string 
+	Parameter PCIE_TXBUF_EN bound to: FALSE - type: string 
+	Parameter PCIE_CLK_SHARING_EN bound to: FALSE - type: string 
+	Parameter PCIE_LANE bound to: 8 - type: integer 
+	Parameter PCIE_REFCLK_FREQ bound to: 0 - type: integer 
+	Parameter PCIE_USERCLK1_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_OOBCLK_MODE bound to: 1 - type: integer 
+	Parameter PCIE_DEBUG_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'PCIe_pipe_clock' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67' bound to instance 'pipe_clock_i' of component 'PCIe_pipe_clock' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:616]
+INFO: [Synth 8-6157] synthesizing module 'PCIe_pipe_clock' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67]
+	Parameter PCIE_ASYNC_EN bound to: FALSE - type: string 
+	Parameter PCIE_TXBUF_EN bound to: FALSE - type: string 
+	Parameter PCIE_CLK_SHARING_EN bound to: FALSE - type: string 
+	Parameter PCIE_LANE bound to: 8 - type: integer 
+	Parameter PCIE_LINK_SPEED bound to: 3 - type: integer 
+	Parameter PCIE_REFCLK_FREQ bound to: 0 - type: integer 
+	Parameter PCIE_USERCLK1_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
+	Parameter PCIE_OOBCLK_MODE bound to: 1 - type: integer 
+	Parameter PCIE_DEBUG_MODE bound to: 0 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 10 - type: integer 
+	Parameter CLKIN1_PERIOD bound to: 10 - type: integer 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 20 - type: integer 
+	Parameter PCIE_GEN1_MODE bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:137]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:138]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:139]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:141]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:142]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:143]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:154]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1136]
+	Parameter CE_TYPE_CE0 bound to: SYNC - type: string 
+	Parameter CE_TYPE_CE1 bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: FALSE - type: string 
+	Parameter PRESELECT_I1 bound to: FALSE - type: string 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1136]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:589]
+INFO: [Synth 8-6155] done synthesizing module 'PCIe_pipe_clock' (4#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67]
+INFO: [Synth 8-3491] module 'PCIe_IP' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/PCIe_IP_stub.vhdl:5' bound to instance 'PCIe_IP_i' of component 'PCIe_IP' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:674]
+INFO: [Synth 8-638] synthesizing module 'PCIe_IP' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/PCIe_IP_stub.vhdl:187]
+INFO: [Synth 8-256] done synthesizing module 'PCIe_support' (5#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:330]
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter TCQ bound to: 1000 - type: integer 
+INFO: [Synth 8-3491] module 'pcie_app' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:27' bound to instance 'app' of component 'pcie_app' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1018]
+INFO: [Synth 8-638] synthesizing module 'pcie_app' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:132]
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter TCQ bound to: 1000 - type: integer 
+INFO: [Synth 8-3491] module 'pcie_bars_dma' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:33' bound to instance 'pcie_bars_dma_compoent' of component 'pcie_bars_dma' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'pcie_bars_dma' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:81]
+INFO: [Synth 8-3491] module 'bar_ram' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/bar_ram_stub.vhdl:5' bound to instance 'bar2_ram_comp' of component 'bar_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'bar_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/bar_ram_stub.vhdl:18]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:260]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:300]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:581]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:632]
+WARNING: [Synth 8-6014] Unused sequential element target_bar_reg was removed.  [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'pcie_bars_dma' (6#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:81]
+WARNING: [Synth 8-3848] Net cfg_turnoff_ok in module/entity pcie_app does not have driver. [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'pcie_app' (7#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:132]
+INFO: [Synth 8-3491] module 'dma_data_ram' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/dma_data_ram_stub.vhdl:5' bound to instance 'dma_ram' of component 'dma_data_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1133]
+INFO: [Synth 8-638] synthesizing module 'dma_data_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/dma_data_ram_stub.vhdl:18]
+WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1146]
+INFO: [Synth 8-3491] module 'user_ip_lite_top' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:10' bound to instance 'user_ip_inst' of component 'user_ip_lite_top' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1163]
+INFO: [Synth 8-638] synthesizing module 'user_ip_lite_top' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:44]
+INFO: [Synth 8-3491] module 'user_ip_registers_mainProjectTop' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:9' bound to instance 'user_ip_registers_mainProjectTop_inst' of component 'user_ip_registers_mainProjectTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'user_ip_registers_mainProjectTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
+WARNING: [Synth 8-614] signal 'interrupt_reqSig' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
+WARNING: [Synth 8-614] signal 'dmaDataDepthReg' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'DirectionChange' (8#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:23]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-638] synthesizing module 'wAvisTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:90]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:141]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:148]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:155]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:162]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:169]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_core' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_core.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_adc' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_adc.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_adc' (9#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_adc.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_spi' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_spi.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/HTGK7-NRCA-DMA/user_ip_srcs/spi_master.vhd:52]
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (10#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/spi_master.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_spi' (11#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_spi.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_core' (12#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_core.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_buffering' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'dpRam' [C:/HTGK7-NRCA-DMA/user_ip_srcs/dp_ram_sync_rd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'dpRam' (13#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/dp_ram_sync_rd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_buffering' (14#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'dmaSignalsGenerator' [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element newDataIdxSig_i_reg was removed.  [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'dmaSignalsGenerator' (15#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'wAvisTop' (16#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_registers_mainProjectTop' (17#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: default - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_lite_top' (18#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:44]
+WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1232]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module' (19#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:103]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[30]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[29]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[28]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[27]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[26]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[25]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[24]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[23]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[22]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[21]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[20]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[19]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[18]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[17]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[16]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[15]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[14]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[13]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[12]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[11]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[10]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[9]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[8]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[7]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[6]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[5]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[4]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[3]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[2]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[0]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[9]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[8]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[7]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[6]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[5]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[4]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[3]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[2]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[1]
+WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port newDataIdxSig[0]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[31]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[30]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[29]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[28]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[27]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[26]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[25]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[24]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[23]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[22]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[21]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[20]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[19]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[18]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[17]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[16]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[15]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[14]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[13]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[12]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[11]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[10]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[9]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[8]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[7]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[3]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[2]
+WARNING: [Synth 8-3331] design line_sensor_buffering has unconnected port crtlRegIn[1]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[27]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[26]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[25]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[7]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[6]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[5]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[4]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[3]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiConfigIn[2]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[31]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[30]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[29]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[28]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[27]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[26]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[25]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[24]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[23]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[22]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[21]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[20]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[19]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[18]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[17]
+WARNING: [Synth 8-3331] design line_sensor_spi has unconnected port spiRwCtrlIn[16]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[31]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[30]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[29]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[28]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[27]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[26]
+WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[25]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.922 ; gain = 320.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1007.922 ; gain = 320.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1007.922 ; gain = 320.496
+---------------------------------------------------------------------------------
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
+Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
+Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
+Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
+Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
+Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
+Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]
+Finished Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]
+Finished Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1313.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 80 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 1313.480 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dma_ram' at clock pin 'clkb' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'app/pcie_bars_dma_compoent/bar2_ram_comp' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '8.000' specified during out-of-context synthesis of instance 'pcie_support_i/PCIe_IP_i' at clock pin 'pipe_oobclk_in' is different from the actual clock period '4.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tfbg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for pcie_support_i/PCIe_IP_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for app/pcie_bars_dma_compoent/bar2_ram_comp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dma_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rx_fsm_state_reg' in module 'pcie_bars_dma'
+INFO: [Synth 8-802] inferred FSM for state register 'dma_fsm_state_reg' in module 'pcie_bars_dma'
+INFO: [Synth 8-802] inferred FSM for state register 'strobeStateR_reg' in module 'line_sensor_adc'
+INFO: [Synth 8-802] inferred FSM for state register 'mstStateR_reg' in module 'line_sensor_core'
+INFO: [Synth 8-802] inferred FSM for state register 'dataGatherState_reg' in module 'line_sensor_buffering'
+INFO: [Synth 8-802] inferred FSM for state register 'pixelCounterState_reg' in module 'dmaSignalsGenerator'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DirectionChange'
+INFO: [Synth 8-5546] ROM "softReset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_IO_LA_i_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_IO_LA_HA_i_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_IO_HB_i_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_DIR_LA_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_DIR_LA_HA_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DIFF_DIR_HB_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "halfClkPerIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mstHighTimeIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mstLowTimeIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spiConfigIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spiRwCtrlIn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixelNumSelIn_L1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixelNumSelIn_L2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixelNumSelIn_L3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixelNumSelIn_L4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lsAdcConfig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dmaDataDepthReg" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               rst_state |                             0000 |                             0000
+               dma_start |                             0001 |                             0001
+           dma_wait_addr |                             0010 |                             0010
+           dma_wait_data |                             0011 |                             0011
+              dma_wr_qw1 |                             0100 |                             0100
+              dma_wr_qw2 |                             0101 |                             0101
+          dma_wr_payload |                             0110 |                             0110
+             dma_end_tlp |                             0111 |                             0111
+      dma_dummy_read_qw1 |                             1000 |                             1000
+      dma_dummy_read_qw2 |                             1001 |                             1001
+       dma_dummy_cpl_qw1 |                             1010 |                             1010
+       dma_dummy_cpl_qw2 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dma_fsm_state_reg' using encoding 'sequential' in module 'pcie_bars_dma'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               rst_state |                             0000 |                             0000
+           bar2_wr_start |                             0001 |                             1001
+             bar2_wr_qw2 |                             0010 |                             1010
+           bar0_wr_start |                             0011 |                             1011
+           bar2_rd_start |                             0100 |                             0001
+       bar2_rd_reply_qw1 |                             0101 |                             0010
+       bar2_rd_reply_qw2 |                             0110 |                             0011
+       bar2_rd_reply_qw3 |                             0111 |                             0100
+           bar0_rd_start |                             1000 |                             0101
+       bar0_rd_wait_data |                             1001 |                             0110
+       bar0_rd_reply_qw1 |                             1010 |                             0111
+       bar0_rd_reply_qw2 |                             1011 |                             1000
+              dummy_cpld |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_fsm_state_reg' using encoding 'sequential' in module 'pcie_bars_dma'
+WARNING: [Synth 8-327] inferring latch for variable 'dma_addr_offset_reg' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:616]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_reset |                              000 |                              000
+                    idle |                              001 |                              001
+          wait_sync_rise |                              010 |                              010
+     wait_pixel_clk_rise |                              011 |                              011
+         check_pixel_cnt |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'strobeStateR_reg' using encoding 'sequential' in module 'line_sensor_adc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                            00001 |                              000
+                    idle |                            00010 |                              001
+                mst_high |                            00100 |                              010
+                 mst_low |                            01000 |                              011
+            check_enable |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstStateR_reg' using encoding 'one-hot' in module 'line_sensor_core'
+INFO: [Synth 8-6430] The Block RAM "dpRam:/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_reset |                               00 |                               00
+                    idle |                               01 |                               01
+       check_camera_mode |                               10 |                               10
+    gather_register_data |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dataGatherState_reg' using encoding 'sequential' in module 'line_sensor_buffering'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_reset |                               00 |                               00
+              wait_start |                               01 |                               01
+           count_strobes |                               10 |                               10
+       increment_counter |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pixelCounterState_reg' using encoding 'sequential' in module 'dmaSignalsGenerator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  dir_in |                               00 |                               00
+              dir_in_out |                               01 |                               01
+                 dir_out |                               10 |                               10
+              dir_out_in |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DirectionChange'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |line_sensor_core__GBM0                |           1|     33020|
+|2     |line_sensor_core__GBM1                |           1|      7175|
+|3     |line_sensor_core__GBM2                |           1|     11535|
+|4     |line_sensor_core__GBM3                |           1|     14625|
+|5     |line_sensor_core__GBM4                |           1|     17030|
+|6     |line_sensor_core__GBM5                |           1|     20254|
+|7     |wAvisTop__GC0                         |           1|      1995|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      4009|
+|9     |Top_Module__GC0                       |           1|      3621|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 32    
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 16    
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 65    
+	               16 Bit    Registers := 15    
+	               12 Bit    Registers := 4107  
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 15    
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 318   
++---RAMs : 
+	              12K Bit         RAMs := 4     
++---Muxes : 
+	  12 Input     64 Bit        Muxes := 1     
+	  13 Input     64 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 34    
+	   5 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 9     
+	  12 Input     16 Bit        Muxes := 1     
+	   6 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	  12 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 15    
+	  12 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   5 Input      5 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 5     
+	  12 Input      5 Bit        Muxes := 1     
+	  13 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   5 Input      4 Bit        Muxes := 8     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	  29 Input      4 Bit        Muxes := 1     
+	  36 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 24    
+	   5 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 82    
+	   2 Input      2 Bit        Muxes := 165   
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 219   
+	   5 Input      1 Bit        Muxes := 64    
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 171   
+	  20 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 16    
+	  13 Input      1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 25    
+Module line_sensor_spi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+Module line_sensor_adc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 10    
+Module line_sensor_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1024  
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 6     
+Module dpRam__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module dpRam__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module dpRam__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module dpRam 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module line_sensor_buffering 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   6 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module dmaSignalsGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 4     
+Module wAvisTop 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module DirectionChange__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__33 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__34 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__35 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__36 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__37 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__38 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__39 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__40 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__41 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__42 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__43 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__44 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__45 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__46 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__47 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__48 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__49 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__50 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__51 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__52 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__53 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__54 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__55 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__56 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__57 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__58 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__59 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__60 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__61 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__62 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__63 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__64 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__65 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__66 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__67 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__68 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__69 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__70 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__71 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__72 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__73 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__74 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__75 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__76 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__77 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__78 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange__79 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module DirectionChange 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module user_ip_registers_mainProjectTop 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	  20 Input      1 Bit        Muxes := 18    
+Module PCIe_pipe_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pcie_bars_dma 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	  12 Input     64 Bit        Muxes := 1     
+	  13 Input     64 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	  12 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	  13 Input      5 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	  36 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	  12 Input      1 Bit        Muxes := 16    
+	  13 Input      1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "Top_Module/LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "Top_Module/LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "Top_Module/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "Top_Module/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/dmaSignalsGeneratorInst/dataValid_reg[0]' (FDR) to 'wAvisTop_insti_25/dmaSignalsGeneratorInst/dataValid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/dmaSignalsGeneratorInst/dataValid_reg[1]' (FDS) to 'wAvisTop_insti_25/dmaSignalsGeneratorInst/dataValid_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wAvisTop_insti_25/\dmaSignalsGeneratorInst/dataValid_reg[2] )
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[2]' (FDR) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wAvisTop_insti_25/\LS_Buffering_inst/bufferDebugSig_reg[3] )
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[4]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[5]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[6]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[7]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[8]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[9]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[10]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[11]' (FDRE) to 'wAvisTop_insti_25/LS_Buffering_inst/bufferDebugSig_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wAvisTop_insti_25/\LS_Buffering_inst/bufferDebugSig_reg[12] )
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[0]' (FDSE) to 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[10]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[1]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[2]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[3]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[4]' (FDSE) to 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[10]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[5]' (FDSE) to 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[10]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[6]' (FDSE) to 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[10]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[7]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[8]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[9]' (FDSE) to 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[10]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (user_ip_registers_mainProjectTop_insti_26/\FPGA_ID_reg[10] )
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/FPGA_ID_reg[11]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[7]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[8]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[9]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[10]' (FDRE) to 'user_ip_registers_mainProjectTop_insti_26/ctrlRegIn_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (user_ip_registers_mainProjectTop_insti_26/\ctrlRegIn_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[0]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[1]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[2]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[3]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[4]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[5]' (LDC) to 'i_0/app/pcie_bars_dma_compoent/dma_addr_offset_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\app/pcie_bars_dma_compoent/dma_addr_offset_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[0]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[1]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[2]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[3]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[4]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[5]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[6]' (FDRE) to 'i_0/app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\app/pcie_bars_dma_compoent/cfg_interrupt_di_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[0]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[0]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[1]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[1]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[2]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[2]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[3]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[4]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[4]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[5]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[5]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[6]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/bars_tx_tkeep_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[6]' (FDE) to 'i_0/app/pcie_bars_dma_compoent/dma_tx_tkeep_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (spi_inst/flipFlopEnable_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiAddressDecimalR_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spi_master_inst/continue_reg )
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/last_bit_rx_reg[0]' (FDE) to 'spi_inst/spi_master_inst/last_bit_rx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/last_bit_rx_reg[1]' (FDE) to 'spi_inst/spi_master_inst/last_bit_rx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/last_bit_rx_reg[2]' (FDE) to 'spi_inst/spi_master_inst/last_bit_rx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/last_bit_rx_reg[3]' (FDE) to 'spi_inst/spi_master_inst/last_bit_rx_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spi_master_inst/slave_reg[0] )
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[16]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[17]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[17]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[18]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[18]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[19]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[19]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[20]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[20]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[21]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[21]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[22]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[22]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[23]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[23]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[24]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[24]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[25]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[25]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[26]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[26]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[27]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[27]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[28]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[28]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[29]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[29]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[30]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spi_master_inst/clk_ratio_reg[30]' (FDE) to 'spi_inst/spi_master_inst/clk_ratio_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spi_master_inst/clk_ratio_reg[31] )
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[4]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[5]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[6]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[6]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[7]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[7]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[8]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[9]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[9]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[10]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[10]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[11]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[11]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[12]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[13]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[13]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[14]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[14]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[15]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[16]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[16]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[17]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[17]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[18]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[18]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[19]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[19]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[20]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[20]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[21]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[21]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[22]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[22]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[23]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[23]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[24]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[24]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[25]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[25]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[26]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[26]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[27]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[27]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[28]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[28]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[29]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[29]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[30]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[30]' (FDRE) to 'spi_inst/spiOffsetShiftR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiOffsetShiftR_reg[31]' (FDRE) to 'spi_inst/spiReadoutPixelsR_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiSkippedPixelsR_reg[31] )
+INFO: [Synth 8-3886] merging instance 'spi_inst/spiReadoutPixelsR_reg[11]' (FDRE) to 'spi_inst/spiReadoutPixelsR_reg[12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiReadoutPixelsR_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (adc_inst/\lsAdcDebug_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:31 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg to conserve power
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/i_0/LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg to conserve power
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/i_1/LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg to conserve power
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/i_2/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg to conserve power
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/i_3/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |line_sensor_core__GBM0                |           4|     25194|
+|2     |line_sensor_core__GBM1                |           4|       324|
+|3     |line_sensor_core__GBM2                |           4|       255|
+|4     |line_sensor_core__GBM3                |           4|       622|
+|5     |line_sensor_core__GBM4                |           4|      1803|
+|6     |line_sensor_core__GBM5                |           4|       663|
+|7     |wAvisTop__GC0                         |           1|      1540|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      2865|
+|9     |Top_Module__GC0                       |           1|      2821|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/pipe_txoutclk_out' to pin 'pcie_support_i/PCIe_IP_i/bbstub_pipe_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/user_clk_out' to pin 'pcie_support_i/PCIe_IP_i/bbstub_user_clk_out/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
+|dpRam:      | RAM_reg    | 1 K x 12(WRITE_FIRST)  |   | R | 1 K x 12(WRITE_FIRST)  | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |line_sensor_core__GBM0                |           4|     25172|
+|2     |line_sensor_core__GBM1                |           4|       251|
+|3     |line_sensor_core__GBM2                |           4|       233|
+|4     |line_sensor_core__GBM3                |           4|       558|
+|5     |line_sensor_core__GBM4                |           1|      1782|
+|6     |line_sensor_core__GBM5                |           4|       621|
+|7     |wAvisTop__GC0                         |           1|       840|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      2734|
+|9     |Top_Module__GC0                       |           1|      2685|
+|10    |line_sensor_core__GBM4__1             |           3|       970|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:02:04 . Memory (MB): peak = 1313.480 ; gain = 626.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------------------+------------+----------+
+|      |RTL Partition                         |Replication |Instances |
++------+--------------------------------------+------------+----------+
+|1     |line_sensor_core__GBM0                |           4|     18384|
+|2     |line_sensor_core__GBM1                |           1|       134|
+|3     |line_sensor_core__GBM2                |           1|       176|
+|4     |line_sensor_core__GBM3                |           1|       272|
+|5     |line_sensor_core__GBM4                |           1|       956|
+|6     |line_sensor_core__GBM5                |           1|       295|
+|7     |wAvisTop__GC0                         |           1|       363|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      1574|
+|9     |Top_Module__GC0                       |           1|      1613|
+|10    |line_sensor_core__GBM4__1             |           1|       632|
+|11    |line_sensor_core__GBM1__1             |           1|       134|
+|12    |line_sensor_core__GBM2__1             |           1|       176|
+|13    |line_sensor_core__GBM3__1             |           1|       272|
+|14    |line_sensor_core__GBM5__1             |           1|       295|
+|15    |line_sensor_core__GBM1__2             |           1|       134|
+|16    |line_sensor_core__GBM2__2             |           1|       176|
+|17    |line_sensor_core__GBM3__2             |           1|       272|
+|18    |line_sensor_core__GBM4__2             |           1|       632|
+|19    |line_sensor_core__GBM5__2             |           1|       295|
+|20    |line_sensor_core__GBM1__3             |           1|       134|
+|21    |line_sensor_core__GBM2__3             |           1|       176|
+|22    |line_sensor_core__GBM3__3             |           1|       272|
+|23    |line_sensor_core__GBM4__3             |           1|       632|
+|24    |line_sensor_core__GBM5__3             |           1|       295|
++------+--------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_mainProjectTop_inst/wAvisTop_inst/LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_mainProjectTop_inst/wAvisTop_inst/LS_Buffering_inst/gen_ls_ram[1].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_mainProjectTop_inst/wAvisTop_inst/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_mainProjectTop_inst/wAvisTop_inst/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:22 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:47 ; elapsed = 00:02:22 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:40 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:40 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:41 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:42 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dma_data_ram  |         1|
+|2     |bar_ram       |         1|
+|3     |PCIe_IP       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |PCIe_IP_bbox_0      |     1|
+|2     |bar_ram_bbox_1      |     1|
+|3     |dma_data_ram_bbox_2 |     1|
+|4     |BUFG                |     4|
+|5     |BUFGCTRL            |     1|
+|6     |CARRY4              |   226|
+|7     |IBUFDS_GTE2         |     1|
+|8     |LUT1                |   142|
+|9     |LUT2                |   579|
+|10    |LUT3                |   604|
+|11    |LUT4                |  1061|
+|12    |LUT5                |   970|
+|13    |LUT6                | 17246|
+|14    |MMCME2_ADV          |     1|
+|15    |MUXF7               |  6572|
+|16    |MUXF8               |  3286|
+|17    |RAMB18E1            |     4|
+|18    |FDCE                |   281|
+|19    |FDPE                |    80|
+|20    |FDRE                | 52605|
+|21    |FDSE                |    59|
+|22    |LDC                 |     1|
+|23    |IBUF                |    19|
+|24    |IOBUF               |    80|
+|25    |OBUF                |    96|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------+---------------------------------+------+
+|      |Instance                                          |Module                           |Cells |
++------+--------------------------------------------------+---------------------------------+------+
+|1     |top                                               |                                 | 84531|
+|2     |  app                                             |pcie_app                         |   897|
+|3     |    pcie_bars_dma_compoent                        |pcie_bars_dma                    |   897|
+|4     |  pcie_support_i                                  |PCIe_support                     |   546|
+|5     |    pipe_clock_i                                  |PCIe_pipe_clock                  |    44|
+|6     |  user_ip_inst                                    |user_ip_lite_top                 | 82793|
+|7     |    user_ip_registers_mainProjectTop_inst         |user_ip_registers_mainProjectTop | 82682|
+|8     |      \gen_DIFF_HA_TS[0].DIFF_HA_TS               |DirectionChange                  |     8|
+|9     |      \gen_DIFF_HA_TS[10].DIFF_HA_TS              |DirectionChange_0                |     8|
+|10    |      \gen_DIFF_HA_TS[11].DIFF_HA_TS              |DirectionChange_1                |     8|
+|11    |      \gen_DIFF_HA_TS[12].DIFF_HA_TS              |DirectionChange_2                |     8|
+|12    |      \gen_DIFF_HA_TS[13].DIFF_HA_TS              |DirectionChange_3                |     8|
+|13    |      \gen_DIFF_HA_TS[14].DIFF_HA_TS              |DirectionChange_4                |     8|
+|14    |      \gen_DIFF_HA_TS[15].DIFF_HA_TS              |DirectionChange_5                |     8|
+|15    |      \gen_DIFF_HA_TS[16].DIFF_HA_TS              |DirectionChange_6                |     8|
+|16    |      \gen_DIFF_HA_TS[17].DIFF_HA_TS              |DirectionChange_7                |     8|
+|17    |      \gen_DIFF_HA_TS[18].DIFF_HA_TS              |DirectionChange_8                |     8|
+|18    |      \gen_DIFF_HA_TS[19].DIFF_HA_TS              |DirectionChange_9                |     8|
+|19    |      \gen_DIFF_HA_TS[1].DIFF_HA_TS               |DirectionChange_10               |     8|
+|20    |      \gen_DIFF_HA_TS[20].DIFF_HA_TS              |DirectionChange_11               |     8|
+|21    |      \gen_DIFF_HA_TS[21].DIFF_HA_TS              |DirectionChange_12               |     8|
+|22    |      \gen_DIFF_HA_TS[22].DIFF_HA_TS              |DirectionChange_13               |     8|
+|23    |      \gen_DIFF_HA_TS[23].DIFF_HA_TS              |DirectionChange_14               |     8|
+|24    |      \gen_DIFF_HA_TS[2].DIFF_HA_TS               |DirectionChange_15               |     8|
+|25    |      \gen_DIFF_HA_TS[3].DIFF_HA_TS               |DirectionChange_16               |     8|
+|26    |      \gen_DIFF_HA_TS[4].DIFF_HA_TS               |DirectionChange_17               |     8|
+|27    |      \gen_DIFF_HA_TS[5].DIFF_HA_TS               |DirectionChange_18               |     8|
+|28    |      \gen_DIFF_HA_TS[6].DIFF_HA_TS               |DirectionChange_19               |     8|
+|29    |      \gen_DIFF_HA_TS[7].DIFF_HA_TS               |DirectionChange_20               |     8|
+|30    |      \gen_DIFF_HA_TS[8].DIFF_HA_TS               |DirectionChange_21               |     8|
+|31    |      \gen_DIFF_HA_TS[9].DIFF_HA_TS               |DirectionChange_22               |     8|
+|32    |      \gen_DIFF_HB_TS[0].DIFF_HB_TS               |DirectionChange_23               |     8|
+|33    |      \gen_DIFF_HB_TS[10].DIFF_HB_TS              |DirectionChange_24               |     8|
+|34    |      \gen_DIFF_HB_TS[11].DIFF_HB_TS              |DirectionChange_25               |     8|
+|35    |      \gen_DIFF_HB_TS[12].DIFF_HB_TS              |DirectionChange_26               |     8|
+|36    |      \gen_DIFF_HB_TS[13].DIFF_HB_TS              |DirectionChange_27               |     8|
+|37    |      \gen_DIFF_HB_TS[14].DIFF_HB_TS              |DirectionChange_28               |     8|
+|38    |      \gen_DIFF_HB_TS[15].DIFF_HB_TS              |DirectionChange_29               |     8|
+|39    |      \gen_DIFF_HB_TS[16].DIFF_HB_TS              |DirectionChange_30               |     8|
+|40    |      \gen_DIFF_HB_TS[17].DIFF_HB_TS              |DirectionChange_31               |     8|
+|41    |      \gen_DIFF_HB_TS[18].DIFF_HB_TS              |DirectionChange_32               |     8|
+|42    |      \gen_DIFF_HB_TS[19].DIFF_HB_TS              |DirectionChange_33               |     8|
+|43    |      \gen_DIFF_HB_TS[1].DIFF_HB_TS               |DirectionChange_34               |     8|
+|44    |      \gen_DIFF_HB_TS[20].DIFF_HB_TS              |DirectionChange_35               |     8|
+|45    |      \gen_DIFF_HB_TS[21].DIFF_HB_TS              |DirectionChange_36               |     9|
+|46    |      \gen_DIFF_HB_TS[2].DIFF_HB_TS               |DirectionChange_37               |     8|
+|47    |      \gen_DIFF_HB_TS[3].DIFF_HB_TS               |DirectionChange_38               |     8|
+|48    |      \gen_DIFF_HB_TS[4].DIFF_HB_TS               |DirectionChange_39               |     8|
+|49    |      \gen_DIFF_HB_TS[5].DIFF_HB_TS               |DirectionChange_40               |     8|
+|50    |      \gen_DIFF_HB_TS[6].DIFF_HB_TS               |DirectionChange_41               |     8|
+|51    |      \gen_DIFF_HB_TS[7].DIFF_HB_TS               |DirectionChange_42               |     8|
+|52    |      \gen_DIFF_HB_TS[8].DIFF_HB_TS               |DirectionChange_43               |     8|
+|53    |      \gen_DIFF_HB_TS[9].DIFF_HB_TS               |DirectionChange_44               |     8|
+|54    |      \gen_DIFF_LA_32_33_TS[32].DIFF_LA_32_33_TS  |DirectionChange_45               |     8|
+|55    |      \gen_DIFF_LA_32_33_TS[33].DIFF_LA_32_33_TS  |DirectionChange_46               |     8|
+|56    |      \gen_DIFF_LA_TS[0].DIFF_LA_TS               |DirectionChange_47               |     8|
+|57    |      \gen_DIFF_LA_TS[10].DIFF_LA_TS              |DirectionChange_48               |     8|
+|58    |      \gen_DIFF_LA_TS[11].DIFF_LA_TS              |DirectionChange_49               |     8|
+|59    |      \gen_DIFF_LA_TS[12].DIFF_LA_TS              |DirectionChange_50               |     8|
+|60    |      \gen_DIFF_LA_TS[13].DIFF_LA_TS              |DirectionChange_51               |     8|
+|61    |      \gen_DIFF_LA_TS[14].DIFF_LA_TS              |DirectionChange_52               |     8|
+|62    |      \gen_DIFF_LA_TS[15].DIFF_LA_TS              |DirectionChange_53               |     8|
+|63    |      \gen_DIFF_LA_TS[16].DIFF_LA_TS              |DirectionChange_54               |     8|
+|64    |      \gen_DIFF_LA_TS[17].DIFF_LA_TS              |DirectionChange_55               |     8|
+|65    |      \gen_DIFF_LA_TS[18].DIFF_LA_TS              |DirectionChange_56               |     8|
+|66    |      \gen_DIFF_LA_TS[19].DIFF_LA_TS              |DirectionChange_57               |     8|
+|67    |      \gen_DIFF_LA_TS[1].DIFF_LA_TS               |DirectionChange_58               |     8|
+|68    |      \gen_DIFF_LA_TS[20].DIFF_LA_TS              |DirectionChange_59               |     8|
+|69    |      \gen_DIFF_LA_TS[21].DIFF_LA_TS              |DirectionChange_60               |     8|
+|70    |      \gen_DIFF_LA_TS[22].DIFF_LA_TS              |DirectionChange_61               |     8|
+|71    |      \gen_DIFF_LA_TS[23].DIFF_LA_TS              |DirectionChange_62               |     8|
+|72    |      \gen_DIFF_LA_TS[24].DIFF_LA_TS              |DirectionChange_63               |     8|
+|73    |      \gen_DIFF_LA_TS[25].DIFF_LA_TS              |DirectionChange_64               |     8|
+|74    |      \gen_DIFF_LA_TS[26].DIFF_LA_TS              |DirectionChange_65               |     8|
+|75    |      \gen_DIFF_LA_TS[27].DIFF_LA_TS              |DirectionChange_66               |     8|
+|76    |      \gen_DIFF_LA_TS[28].DIFF_LA_TS              |DirectionChange_67               |     8|
+|77    |      \gen_DIFF_LA_TS[29].DIFF_LA_TS              |DirectionChange_68               |     8|
+|78    |      \gen_DIFF_LA_TS[2].DIFF_LA_TS               |DirectionChange_69               |     8|
+|79    |      \gen_DIFF_LA_TS[30].DIFF_LA_TS              |DirectionChange_70               |     8|
+|80    |      \gen_DIFF_LA_TS[31].DIFF_LA_TS              |DirectionChange_71               |     8|
+|81    |      \gen_DIFF_LA_TS[3].DIFF_LA_TS               |DirectionChange_72               |     8|
+|82    |      \gen_DIFF_LA_TS[4].DIFF_LA_TS               |DirectionChange_73               |     8|
+|83    |      \gen_DIFF_LA_TS[5].DIFF_LA_TS               |DirectionChange_74               |     8|
+|84    |      \gen_DIFF_LA_TS[6].DIFF_LA_TS               |DirectionChange_75               |     8|
+|85    |      \gen_DIFF_LA_TS[7].DIFF_LA_TS               |DirectionChange_76               |     8|
+|86    |      \gen_DIFF_LA_TS[8].DIFF_LA_TS               |DirectionChange_77               |     8|
+|87    |      \gen_DIFF_LA_TS[9].DIFF_LA_TS               |DirectionChange_78               |     8|
+|88    |      wAvisTop_inst                               |wAvisTop                         | 80853|
+|89    |        L1_inst                                   |line_sensor_core                 | 20332|
+|90    |          adc_inst                                |line_sensor_adc_91               |  1821|
+|91    |          spi_inst                                |line_sensor_spi_92               |   245|
+|92    |            spi_master_inst                       |spi_master_93                    |   194|
+|93    |        L2_inst                                   |line_sensor_core_79              | 19978|
+|94    |          adc_inst                                |line_sensor_adc_88               |  1721|
+|95    |          spi_inst                                |line_sensor_spi_89               |   245|
+|96    |            spi_master_inst                       |spi_master_90                    |   194|
+|97    |        L3_inst                                   |line_sensor_core_80              | 19977|
+|98    |          adc_inst                                |line_sensor_adc_85               |  1719|
+|99    |          spi_inst                                |line_sensor_spi_86               |   246|
+|100   |            spi_master_inst                       |spi_master_87                    |   195|
+|101   |        L4_inst                                   |line_sensor_core_81              | 20154|
+|102   |          adc_inst                                |line_sensor_adc                  |  1750|
+|103   |          spi_inst                                |line_sensor_spi                  |   390|
+|104   |            spi_master_inst                       |spi_master                       |   218|
+|105   |        LS_Buffering_inst                         |line_sensor_buffering            |   245|
+|106   |          \gen_ls_ram[0].ram_lsX                  |dpRam                            |    13|
+|107   |          \gen_ls_ram[1].ram_lsX                  |dpRam_82                         |    13|
+|108   |          \gen_ls_ram[2].ram_lsX                  |dpRam_83                         |     1|
+|109   |          \gen_ls_ram[3].ram_lsX                  |dpRam_84                         |     1|
+|110   |        dmaSignalsGeneratorInst                   |dmaSignalsGenerator              |   167|
++------+--------------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:42 . Memory (MB): peak = 1338.156 ; gain = 650.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:02:28 . Memory (MB): peak = 1338.156 ; gain = 345.172
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:43 . Memory (MB): peak = 1338.156 ; gain = 650.730
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 10170 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1380.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 80 instances
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+491 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:25 ; elapsed = 00:03:01 . Memory (MB): peak = 1380.406 ; gain = 990.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1380.406 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/Top_Module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1380.406 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  8 14:07:08 2022...

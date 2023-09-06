@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram_sim_netlist.vhdl" \
+
+nosort

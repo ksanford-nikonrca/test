@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 13 18:11:32 2022
+# Process ID: 29440
+# Current directory: C:/Users/mcassinerio/Documents/GitHub/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/bar_ram_synth_1
+# Command line: vivado.exe -log bar_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bar_ram.tcl
+# Log file: C:/Users/mcassinerio/Documents/GitHub/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/bar_ram_synth_1/bar_ram.vds
+# Journal file: C:/Users/mcassinerio/Documents/GitHub/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/bar_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bar_ram.tcl -notrace

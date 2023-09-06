@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl wavis_lib  \
+"../../../../user_ip_srcs/wAvisPackage.vhd" \
+"../../../../user_ip_srcs/standard_pack.vhd" \
+"../../../../user_ip_srcs/dmaSignalsGenerator.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../HTGK7-NRCA-DMA.srcs/sim_1/new/tb_dmaSignalsGenerator.vhd" \
+
+# Do not sort compile order
+nosort
