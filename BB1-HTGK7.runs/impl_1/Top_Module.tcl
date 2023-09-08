@@ -66,21 +66,20 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7k325tfbg900-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.cache/wt [current_project]
-  set_property parent.project_path C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.xpr [current_project]
-  set_property ip_output_repo C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/BB1-HTGK7/BB1-HTGK7.cache/wt [current_project]
+  set_property parent.project_path C:/BB1-HTGK7/BB1-HTGK7.xpr [current_project]
+  set_property ip_output_repo C:/BB1-HTGK7/BB1-HTGK7.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/Top_Module.dcp
-  read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP.xci
-  read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram.xci
-  read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram.xci
-  read_xdc C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc
-  read_xdc C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc
+  add_files -quiet C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/Top_Module.dcp
+  read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/PCIe_IP.xci
+  read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/bar_ram/bar_ram.xci
+  read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/dma_data_ram/dma_data_ram.xci
+  read_xdc C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc
+  read_xdc C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc
   link_design -top Top_Module -part xc7k325tfbg900-2
   close_msg_db -file init_design.pb
 } RESULT]
@@ -153,25 +152,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force Top_Module.mmi }
-  write_bitstream -force Top_Module.bit -bin_file
-  catch {write_debug_probes -quiet -force Top_Module}
-  catch {file copy -force Top_Module.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

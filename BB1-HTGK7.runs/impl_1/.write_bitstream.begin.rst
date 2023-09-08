@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command=".planAhead." Owner="vsolidum" Host="VSOLIDUM" Pid="15904">
-    </Process>
-</ProcessHandle>

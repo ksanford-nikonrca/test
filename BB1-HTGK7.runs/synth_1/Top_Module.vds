@@ -2,12 +2,12 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Mon Aug  8 14:03:45 2022
-# Process ID: 14244
-# Current directory: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1
+# Start of session at: Thu Sep  7 11:32:40 2023
+# Process ID: 930148
+# Current directory: C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1
 # Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
-# Log file: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/Top_Module.vds
-# Journal file: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1\vivado.jou
+# Log file: C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/Top_Module.vds
+# Journal file: C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Module.tcl -notrace
 Command: synth_design -top Top_Module -part xc7k325tfbg900-2
@@ -17,12 +17,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325
 INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xc7k325tfbg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24600 
+INFO: Helper process launched with PID 945700 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.844 ; gain = 177.418
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 864.160 ; gain = 176.492
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-1565] actual for formal port reg_addr is neither a static name nor a globally static expression [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1177]
-INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:103]
+WARNING: [Synth 8-1565] actual for formal port reg_addr is neither a static name nor a globally static expression [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1177]
+INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:103]
 	Parameter INIT_PATTERN_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_PATTERN1 bound to: 8'b00010010 
 	Parameter INIT_PATTERN2 bound to: 8'b10011010 
@@ -33,7 +33,7 @@ INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/HTGK7-NRCA-DMA/HTGK7-NR
 	Parameter CLKCM_CFG bound to: 1 - type: bool 
 	Parameter CLKRCV_TRST bound to: 1 - type: bool 
 	Parameter CLKSWING_CFG bound to: 2'b11 
-INFO: [Synth 8-113] binding component instance 'sys_clk_pcie_clk_inst' to cell 'IBUFDS_GTE2' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:730]
+INFO: [Synth 8-113] binding component instance 'sys_clk_pcie_clk_inst' to cell 'IBUFDS_GTE2' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:730]
 	Parameter LINK_CAP_MAX_LINK_WIDTH bound to: 8 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter KEEP_WIDTH bound to: 8 - type: integer 
@@ -43,8 +43,8 @@ INFO: [Synth 8-113] binding component instance 'sys_clk_pcie_clk_inst' to cell '
 	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
 	Parameter PCIE_GT_DEVICE bound to: GTX - type: string 
 	Parameter PCIE_USE_MODE bound to: 3.0 - type: string 
-INFO: [Synth 8-3491] module 'PCIe_support' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:66' bound to instance 'pcie_support_i' of component 'PCIe_support' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:755]
-INFO: [Synth 8-638] synthesizing module 'PCIe_support' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:330]
+INFO: [Synth 8-3491] module 'PCIe_support' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:66' bound to instance 'pcie_support_i' of component 'PCIe_support' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:755]
+INFO: [Synth 8-638] synthesizing module 'PCIe_support' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:330]
 	Parameter LINK_CAP_MAX_LINK_WIDTH bound to: 8 - type: integer 
 	Parameter CLK_SHARING_EN bound to: FALSE - type: string 
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
@@ -64,8 +64,8 @@ INFO: [Synth 8-638] synthesizing module 'PCIe_support' [C:/HTGK7-NRCA-DMA/HTGK7-
 	Parameter PCIE_USERCLK2_FREQ bound to: 4 - type: integer 
 	Parameter PCIE_OOBCLK_MODE bound to: 1 - type: integer 
 	Parameter PCIE_DEBUG_MODE bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'PCIe_pipe_clock' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67' bound to instance 'pipe_clock_i' of component 'PCIe_pipe_clock' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:616]
-INFO: [Synth 8-6157] synthesizing module 'PCIe_pipe_clock' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67]
+INFO: [Synth 8-3491] module 'PCIe_pipe_clock' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:67' bound to instance 'pipe_clock_i' of component 'PCIe_pipe_clock' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:616]
+INFO: [Synth 8-6157] synthesizing module 'PCIe_pipe_clock' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:67]
 	Parameter PCIE_ASYNC_EN bound to: FALSE - type: string 
 	Parameter PCIE_TXBUF_EN bound to: FALSE - type: string 
 	Parameter PCIE_CLK_SHARING_EN bound to: FALSE - type: string 
@@ -85,13 +85,13 @@ INFO: [Synth 8-6157] synthesizing module 'PCIe_pipe_clock' [C:/HTGK7-NRCA-DMA/HT
 	Parameter CLKOUT3_DIVIDE bound to: 4 - type: integer 
 	Parameter CLKOUT4_DIVIDE bound to: 20 - type: integer 
 	Parameter PCIE_GEN1_MODE bound to: 1'b1 
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:137]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:138]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:139]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:141]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:142]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:143]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:154]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:137]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:138]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:139]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:141]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:142]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:143]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:154]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1136]
@@ -161,551 +161,551 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
-WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:589]
-INFO: [Synth 8-6155] done synthesizing module 'PCIe_pipe_clock' (4#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v:67]
-INFO: [Synth 8-3491] module 'PCIe_IP' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/PCIe_IP_stub.vhdl:5' bound to instance 'PCIe_IP_i' of component 'PCIe_IP' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:674]
-INFO: [Synth 8-638] synthesizing module 'PCIe_IP' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/PCIe_IP_stub.vhdl:187]
-INFO: [Synth 8-256] done synthesizing module 'PCIe_support' (5#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd:330]
+WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:589]
+INFO: [Synth 8-6155] done synthesizing module 'PCIe_pipe_clock' (4#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:67]
+INFO: [Synth 8-3491] module 'PCIe_IP' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/PCIe_IP_stub.vhdl:5' bound to instance 'PCIe_IP_i' of component 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:674]
+INFO: [Synth 8-638] synthesizing module 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/PCIe_IP_stub.vhdl:187]
+INFO: [Synth 8-256] done synthesizing module 'PCIe_support' (5#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:330]
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter TCQ bound to: 1000 - type: integer 
-INFO: [Synth 8-3491] module 'pcie_app' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:27' bound to instance 'app' of component 'pcie_app' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1018]
-INFO: [Synth 8-638] synthesizing module 'pcie_app' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:132]
+INFO: [Synth 8-3491] module 'pcie_app' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:27' bound to instance 'app' of component 'pcie_app' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1018]
+INFO: [Synth 8-638] synthesizing module 'pcie_app' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:132]
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter TCQ bound to: 1000 - type: integer 
-INFO: [Synth 8-3491] module 'pcie_bars_dma' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:33' bound to instance 'pcie_bars_dma_compoent' of component 'pcie_bars_dma' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'pcie_bars_dma' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:81]
-INFO: [Synth 8-3491] module 'bar_ram' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/bar_ram_stub.vhdl:5' bound to instance 'bar2_ram_comp' of component 'bar_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:246]
-INFO: [Synth 8-638] synthesizing module 'bar_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/bar_ram_stub.vhdl:18]
-WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:260]
-WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:300]
-WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:581]
-WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:632]
-WARNING: [Synth 8-6014] Unused sequential element target_bar_reg was removed.  [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:356]
-INFO: [Synth 8-256] done synthesizing module 'pcie_bars_dma' (6#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:81]
-WARNING: [Synth 8-3848] Net cfg_turnoff_ok in module/entity pcie_app does not have driver. [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'pcie_app' (7#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd:132]
-INFO: [Synth 8-3491] module 'dma_data_ram' declared at 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/dma_data_ram_stub.vhdl:5' bound to instance 'dma_ram' of component 'dma_data_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1133]
-INFO: [Synth 8-638] synthesizing module 'dma_data_ram' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/.Xil/Vivado-14244-VSOLIDUM/realtime/dma_data_ram_stub.vhdl:18]
-WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1146]
-INFO: [Synth 8-3491] module 'user_ip_lite_top' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:10' bound to instance 'user_ip_inst' of component 'user_ip_lite_top' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1163]
-INFO: [Synth 8-638] synthesizing module 'user_ip_lite_top' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:44]
-INFO: [Synth 8-3491] module 'user_ip_registers_mainProjectTop' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:9' bound to instance 'user_ip_registers_mainProjectTop_inst' of component 'user_ip_registers_mainProjectTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'user_ip_registers_mainProjectTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
-WARNING: [Synth 8-614] signal 'interrupt_reqSig' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
-WARNING: [Synth 8-614] signal 'dmaDataDepthReg' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-638] synthesizing module 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'DirectionChange' (8#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:23]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-638] synthesizing module 'wAvisTop' [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:90]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:141]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:148]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:155]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:162]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:169]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:176]
-INFO: [Synth 8-638] synthesizing module 'line_sensor_core' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_core.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'line_sensor_adc' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_adc.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'line_sensor_adc' (9#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_adc.vhd:51]
-INFO: [Synth 8-638] synthesizing module 'line_sensor_spi' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_spi.vhd:52]
-INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/HTGK7-NRCA-DMA/user_ip_srcs/spi_master.vhd:52]
+INFO: [Synth 8-3491] module 'pcie_bars_dma' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:33' bound to instance 'pcie_bars_dma_compoent' of component 'pcie_bars_dma' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'pcie_bars_dma' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:81]
+INFO: [Synth 8-3491] module 'bar_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/bar_ram_stub.vhdl:5' bound to instance 'bar2_ram_comp' of component 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/bar_ram_stub.vhdl:18]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:260]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:300]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:581]
+WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:632]
+WARNING: [Synth 8-6014] Unused sequential element target_bar_reg was removed.  [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'pcie_bars_dma' (6#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:81]
+WARNING: [Synth 8-3848] Net cfg_turnoff_ok in module/entity pcie_app does not have driver. [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'pcie_app' (7#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:132]
+INFO: [Synth 8-3491] module 'dma_data_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/dma_data_ram_stub.vhdl:5' bound to instance 'dma_ram' of component 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1133]
+INFO: [Synth 8-638] synthesizing module 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/dma_data_ram_stub.vhdl:18]
+WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1146]
+INFO: [Synth 8-3491] module 'user_ip_lite_top' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:10' bound to instance 'user_ip_inst' of component 'user_ip_lite_top' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1163]
+INFO: [Synth 8-638] synthesizing module 'user_ip_lite_top' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:44]
+INFO: [Synth 8-3491] module 'user_ip_registers_mainProjectTop' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:9' bound to instance 'user_ip_registers_mainProjectTop_inst' of component 'user_ip_registers_mainProjectTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'user_ip_registers_mainProjectTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
+WARNING: [Synth 8-614] signal 'interrupt_reqSig' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
+WARNING: [Synth 8-614] signal 'dmaDataDepthReg' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'DirectionChange' (8#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:23]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-638] synthesizing module 'wAvisTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:90]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:141]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:148]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:155]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:162]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:169]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_core' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_core.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_adc' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_adc.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_adc' (9#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_adc.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_spi' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_spi.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/spi_master.vhd:52]
 	Parameter slaves bound to: 1 - type: integer 
 	Parameter d_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'spi_master' (10#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/spi_master.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'line_sensor_spi' (11#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_spi.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'line_sensor_core' (12#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_core.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'line_sensor_buffering' [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:48]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:186]
-INFO: [Synth 8-638] synthesizing module 'dpRam' [C:/HTGK7-NRCA-DMA/user_ip_srcs/dp_ram_sync_rd.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'dpRam' (13#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/dp_ram_sync_rd.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'line_sensor_buffering' (14#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'dmaSignalsGenerator' [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:25]
-INFO: [Synth 8-226] default block is never used [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:82]
-WARNING: [Synth 8-6014] Unused sequential element newDataIdxSig_i_reg was removed.  [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'dmaSignalsGenerator' (15#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'wAvisTop' (16#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'user_ip_registers_mainProjectTop' (17#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (10#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/spi_master.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_spi' (11#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_spi.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_core' (12#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_core.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'line_sensor_buffering' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_buffering.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_buffering.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'dpRam' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dp_ram_sync_rd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'dpRam' (13#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dp_ram_sync_rd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'line_sensor_buffering' (14#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_buffering.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'dmaSignalsGenerator' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element newDataIdxSig_i_reg was removed.  [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'dmaSignalsGenerator' (15#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'wAvisTop' (16#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_registers_mainProjectTop' (17#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:141]
+INFO: [Synth 8-113] binding component instance 'DIFF_LA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:141]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:156]
+INFO: [Synth 8-113] binding component instance 'DIFF_HA_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:156]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:171]
-INFO: [Synth 8-256] done synthesizing module 'user_ip_lite_top' (18#1) [C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd:44]
-WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:1232]
-INFO: [Synth 8-256] done synthesizing module 'Top_Module' (19#1) [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd:103]
+INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_lite_top' (18#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:44]
+WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1232]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module' (19#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:103]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[30]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[29]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[28]
@@ -808,7 +808,7 @@ WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[
 WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[25]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.922 ; gain = 320.496
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1008.602 ; gain = 320.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -821,53 +821,58 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1007.922 ; gain = 320.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.602 ; gain = 320.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1007.922 ; gain = 320.496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.602 ; gain = 320.934
 ---------------------------------------------------------------------------------
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
-Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
-Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
-Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
-Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
-Finished Parsing XDC File [c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
-Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]
-Finished Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
+Finished Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/PCIe_IP/PCIe_IP_in_context.xdc] for cell 'pcie_support_i/PCIe_IP_i'
+Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
+Finished Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/bar_ram/bar_ram/bar_ram_in_context.xdc] for cell 'app/pcie_bars_dma_compoent/bar2_ram_comp'
+Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
+Finished Parsing XDC File [c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/dma_data_ram/dma_data_ram/dma_data_ram_in_context.xdc] for cell 'dma_ram'
+Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc]
+Finished Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]
-Finished Parsing XDC File [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_p[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_n[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:140]
+WARNING: [Vivado 12-508] No pins matched 'top_level_i/util_ds_buf_0/IBUF_OUT'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_p[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:195]
+Finished Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1313.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1314.160 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 80 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 80 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 1313.480 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.411 . Memory (MB): peak = 1314.160 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dma_ram' at clock pin 'clkb' is different from the actual clock period '4.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'app/pcie_bars_dma_compoent/bar2_ram_comp' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '8.000' specified during out-of-context synthesis of instance 'pcie_support_i/PCIe_IP_i' at clock pin 'pipe_oobclk_in' is different from the actual clock period '4.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tfbg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -876,7 +881,7 @@ Applied set_property DONT_TOUCH = true for pcie_support_i/PCIe_IP_i. (constraint
 Applied set_property DONT_TOUCH = true for app/pcie_bars_dma_compoent/bar2_ram_comp. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for dma_ram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'rx_fsm_state_reg' in module 'pcie_bars_dma'
 INFO: [Synth 8-802] inferred FSM for state register 'dma_fsm_state_reg' in module 'pcie_bars_dma'
@@ -938,7 +943,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'dma_fsm_state_reg' using e
               dummy_cpld |                             1100 |                             1100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rx_fsm_state_reg' using encoding 'sequential' in module 'pcie_bars_dma'
-WARNING: [Synth 8-327] inferring latch for variable 'dma_addr_offset_reg' [C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd:616]
+WARNING: [Synth 8-327] inferring latch for variable 'dma_addr_offset_reg' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:616]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -988,7 +993,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'pixelCounterState_reg' usi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DirectionChange'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -2155,7 +2160,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (adc_inst/\lsAdcDebug_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:31 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:42 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2205,13 +2210,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/user_clk_out' to pin 'pcie_support_i/PCIe_IP_i/bbstub_user_clk_out/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:52 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:58 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2254,7 +2259,7 @@ INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_
 INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:02:04 . Memory (MB): peak = 1313.480 ; gain = 626.055
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:02:18 . Memory (MB): peak = 1314.160 ; gain = 626.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2306,7 +2311,7 @@ INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:22 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished IO Insertion : Time (s): cpu = 00:01:54 ; elapsed = 00:02:36 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2319,7 +2324,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:47 ; elapsed = 00:02:22 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:02:36 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2331,25 +2336,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:40 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:12 ; elapsed = 00:02:54 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:40 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:12 ; elapsed = 00:02:54 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:41 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:55 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:42 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:56 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2511,31 +2516,31 @@ Report Instance Areas:
 |110   |        dmaSignalsGeneratorInst                   |dmaSignalsGenerator              |   167|
 +------+--------------------------------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:42 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:56 . Memory (MB): peak = 1334.570 ; gain = 646.902
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:02:28 . Memory (MB): peak = 1338.156 ; gain = 345.172
-Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:43 . Memory (MB): peak = 1338.156 ; gain = 650.730
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:02:41 . Memory (MB): peak = 1334.570 ; gain = 341.344
+Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:57 . Memory (MB): peak = 1334.570 ; gain = 646.902
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 10170 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1380.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1382.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 81 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 80 instances
   LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-491 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+491 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:25 ; elapsed = 00:03:01 . Memory (MB): peak = 1380.406 ; gain = 990.941
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1380.406 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:03:18 . Memory (MB): peak = 1382.574 ; gain = 994.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1382.574 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/synth_1/Top_Module.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1380.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/Top_Module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.574 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug  8 14:07:08 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  7 11:36:23 2023...

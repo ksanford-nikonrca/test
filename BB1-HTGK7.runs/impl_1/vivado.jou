@@ -2,11 +2,11 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Mon Aug  8 14:07:16 2022
-# Process ID: 15904
-# Current directory: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/impl_1
+# Start of session at: Thu Sep  7 11:36:45 2023
+# Process ID: 948828
+# Current directory: C:/BB1-HTGK7/BB1-HTGK7.runs/impl_1
 # Command line: vivado.exe -log Top_Module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_Module.tcl -notrace
-# Log file: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/impl_1/Top_Module.vdi
-# Journal file: C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.runs/impl_1\vivado.jou
+# Log file: C:/BB1-HTGK7/BB1-HTGK7.runs/impl_1/Top_Module.vdi
+# Journal file: C:/BB1-HTGK7/BB1-HTGK7.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Module.tcl -notrace

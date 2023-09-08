@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tfbg900-2" LaunchTime="1659992621">
+<GenRun Id="synth_1" LaunchPart="xc7k325tfbg900-2" LaunchTime="1694111555">
   <File Type="PA-TCL" Name="Top_Module.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_Module_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Module_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top_Module.vds"/>
   <File Type="RDS-UTIL" Name="Top_Module_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_Module_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top_Module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_Module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_Module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/PCIe_pipe_clock.v">
@@ -190,20 +193,20 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/constr_fmc.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/constr_pcie.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PPRDIR/../HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constraints/constr_fmc.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

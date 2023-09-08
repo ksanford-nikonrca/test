@@ -104,6 +104,8 @@ architecture arch_imp of user_ip_registers_mainProjectTop is
 	signal WR_EN_rising        : std_logic;
 	signal RD_REQ_rising     : std_logic;
 	signal RESET               : std_logic;
+	signal PWM_REG				: std_logic_vector(31 downto 0);
+    signal PWM_HIGH_TIME_REG	: std_logic_vector(31 downto 0);
     --I/O SIGNALS
     signal MST_o       : std_logic;
     signal MCLK_o      : std_logic;
@@ -140,6 +142,19 @@ architecture arch_imp of user_ip_registers_mainProjectTop is
         EXTERNAL_TRI	: out std_logic  -- tri-state control for external buffer
     );  	 
     end component DirectionChange;
+    
+    component LSR_CNTRL is
+        port (
+            CLK		: in std_logic;
+            RESET	: in std_logic;
+            
+            lsr_enable_in     : in std_logic;
+            lsr_pulse_in      : in std_logic;
+            lsr_enable_out    : out std_logic;
+            lsr_pulse_out     : out std_logic
+    
+        );
+	end component LSR_CNTRL;
 
 begin
     RESET <= not RESETN;
@@ -714,5 +729,21 @@ wAvisTop_inst : entity WAVIS_LIB.wAvisTop(rtl)
 		DMA_DATA  => DMA_DATA,
 		DMA_DATA_ADDR => DMA_DATA_ADDR,
 		DMA_DATA_WR_EN => DMA_DATA_WR_EN
-    );	
+    );
+    
+GEN_ARRAY: for I in 0 to 2 generate    
+    lsr_cntrl_inst : LSR_CNTRL
+        port map (
+            CLK => CLK_125MHZ,--		: in std_logic;
+            RESET => RESET,--	: in std_logic;
+            
+            lsr_enable_in => lsr_cntrl_reg(I),   -- : in std_logic;
+		    lsr_pulse_in => lsr_cntrl_reg(I+2),   -- : in std_logic;
+            lsr_enable_out    : out std_logic;
+            lsr_pulse_out      : out std_logic
+        );
+end generate GEN_ARRAY;
+	
 end arch_imp;
+
+

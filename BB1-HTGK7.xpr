@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="C:/BB1-HTGK7/BB1-HTGK7.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="76954ae38f954de1b36e28672557c5e2"/>
+    <Option Name="Id" Val="1472e9cf0c0b42d5b44aa519357ae13f"/>
     <Option Name="Part" Val="xc7k325tfbg900-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -74,6 +74,12 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd"/>
           <Attr Name="ImportTime" Val="1694031086"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -245,21 +251,18 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/constraints/constr_fmc.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../HTGK7-NRCA-DMA/user_ip_srcs/constraints/constr_fmc.xdc"/>
-          <Attr Name="ImportTime" Val="1694031086"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/constrs_1/imports/constraints/constr_pcie.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../HTGK7-NRCA-DMA/user_ip_srcs/constraints/constr_pcie.xdc"/>
-          <Attr Name="ImportTime" Val="1694031086"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constraints/constr_fmc.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>

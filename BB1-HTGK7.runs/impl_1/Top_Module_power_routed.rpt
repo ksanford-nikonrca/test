@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date             : Mon Aug  8 14:15:29 2022
-| Host             : VSOLIDUM running 64-bit major release  (build 9200)
+| Date             : Thu Sep  7 11:44:52 2023
+| Host             : KWELLS running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
 | Device           : xc7k325tfbg900-2
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.220        |
+| Total On-Chip Power (W)  | 3.217        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.028        |
+| Dynamic (W)              | 3.025        |
 | Device Static (W)        | 0.192        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 79.2         |
@@ -52,16 +52,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.062 |        8 |       --- |             --- |
-| Slice Logic             |     0.014 |    91169 |       --- |             --- |
-|   LUT as Logic          |     0.012 |    22241 |    203800 |           10.91 |
-|   Register              |     0.001 |    56949 |    407600 |           13.97 |
+| Clocks                  |     0.060 |        7 |       --- |             --- |
+| Slice Logic             |     0.014 |    91174 |       --- |             --- |
+|   LUT as Logic          |     0.012 |    22247 |    203800 |           10.92 |
+|   Register              |     0.001 |    56952 |    407600 |           13.97 |
 |   CARRY4                |    <0.001 |      325 |     50950 |            0.64 |
 |   F7/F8 Muxes           |    <0.001 |     9938 |    203800 |            4.88 |
-|   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
+|   BUFG                  |    <0.001 |        3 |        32 |            9.38 |
 |   LUT as Shift Register |    <0.001 |       60 |     64000 |            0.09 |
 |   Others                |     0.000 |      361 |       --- |             --- |
-| Signals                 |     0.095 |    69438 |       --- |             --- |
+|   BUFR                  |     0.000 |        1 |       208 |            0.48 |
+| Signals                 |     0.094 |    69441 |       --- |             --- |
 | Block RAM               |     0.057 |       13 |       445 |            2.92 |
 | MMCM                    |     0.108 |        1 |        10 |           10.00 |
 | I/O                     |     0.539 |      161 |       500 |           32.20 |
@@ -69,7 +70,7 @@ Table of Contents
 | Hard IPs                |     0.045 |        1 |       --- |             --- |
 |   PCIE                  |     0.045 |        1 |         1 |          100.00 |
 | Static Power            |     0.192 |          |           |                 |
-| Total                   |     3.220 |          |           |                 |
+| Total                   |     3.217 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.507 |       0.420 |      0.087 |
+| Vccint    |       1.000 |     0.504 |       0.417 |      0.087 |
 | Vccaux    |       1.800 |     0.108 |       0.079 |      0.029 |
 | Vcco33    |       3.300 |     0.153 |       0.152 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -133,16 +134,15 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------+------------------------------------------------------------------------------------------------------+-----------------+
-| Clock              | Domain                                                                                               | Constraint (ns) |
-+--------------------+------------------------------------------------------------------------------------------------------+-----------------+
-| clk_125mhz         | pcie_support_i/pipe_clock_i/clk_125mhz                                                               |             8.0 |
-| clk_250mhz         | pcie_support_i/pipe_clock_i/clk_250mhz                                                               |             4.0 |
-| mmcm_fb            | pcie_support_i/pipe_clock_i/mmcm_fb                                                                  |            10.0 |
-| sys_clk_pcie_clk_p | sys_clk_pcie_clk_p                                                                                   |            10.0 |
-| txoutclk_x0y0      | pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/pipe_txoutclk_out |            10.0 |
-| userclk1           | pcie_support_i/pipe_clock_i/userclk1                                                                 |             4.0 |
-+--------------------+------------------------------------------------------------------------------------------------------+-----------------+
++---------------+------------------------------------------------------------------------------------------------------+-----------------+
+| Clock         | Domain                                                                                               | Constraint (ns) |
++---------------+------------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz    | pcie_support_i/pipe_clock_i/clk_125mhz                                                               |             8.0 |
+| clk_250mhz    | pcie_support_i/pipe_clock_i/clk_250mhz                                                               |             4.0 |
+| mmcm_fb       | pcie_support_i/pipe_clock_i/mmcm_fb                                                                  |            10.0 |
+| txoutclk_x0y0 | pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/pipe_txoutclk_out |            10.0 |
+| userclk1      | pcie_support_i/pipe_clock_i/userclk1                                                                 |             4.0 |
++---------------+------------------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -154,16 +154,16 @@ Table of Contents
 +-------------------------------------------+-----------+
 | Name                                      | Power (W) |
 +-------------------------------------------+-----------+
-| Top_Module                                |     3.028 |
-|   app                                     |     0.016 |
-|     pcie_bars_dma_compoent                |     0.016 |
+| Top_Module                                |     3.025 |
+|   app                                     |     0.017 |
+|     pcie_bars_dma_compoent                |     0.017 |
 |       bar2_ram_comp                       |     0.005 |
 |   dma_ram                                 |     0.009 |
 |     U0                                    |     0.009 |
 |       inst_blk_mem_gen                    |     0.009 |
-|   pcie_support_i                          |     2.381 |
-|     PCIe_IP_i                             |     2.272 |
-|       U0                                  |     2.272 |
+|   pcie_support_i                          |     2.378 |
+|     PCIe_IP_i                             |     2.269 |
+|       U0                                  |     2.269 |
 |     pipe_clock_i                          |     0.109 |
 |   user_ip_inst                            |     0.070 |
 |     user_ip_registers_mainProjectTop_inst |     0.023 |

@@ -17,51 +17,51 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7k325tfbg900-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.cache/wt [current_project]
-set_property parent.project_path C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.xpr [current_project]
+set_property webtalk.parent_dir C:/BB1-HTGK7/BB1-HTGK7.cache/wt [current_project]
+set_property parent.project_path C:/BB1-HTGK7/BB1-HTGK7.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.cache/ip [current_project]
+set_property ip_output_repo c:/BB1-HTGK7/BB1-HTGK7.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_pipe_clock.v
+read_verilog -library xil_defaultlib C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v
 read_vhdl -library xil_defaultlib {
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/DirectionChange.vhd
-  C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/PCIe_support.vhd
-  C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_app.vhd
-  C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/pcie_bars_dma.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_lite_top.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/user_ip_registers_mainProjectTop.vhd
-  C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/new/Top_Module.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd
 }
 read_vhdl -library wavis_lib {
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisPackage.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/standard_pack.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/dmaSignalsGenerator.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/dp_ram_sync_rd.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_adc.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_buffering.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/spi_master.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_spi.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/line_sensor_core.vhd
-  C:/HTGK7-NRCA-DMA/user_ip_srcs/wAvisTop.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisPackage.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/standard_pack.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dp_ram_sync_rd.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_adc.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_buffering.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/spi_master.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_spi.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/line_sensor_core.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd
 }
-read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/PCIe_IP.xci
-set_property used_in_implementation false [get_files -all c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/source/PCIe_IP-PCIE_X0Y0.xdc]
-set_property used_in_implementation false [get_files -all c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/PCIe_IP/synth/PCIe_IP_ooc.xdc]
+read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/PCIe_IP.xci
+set_property used_in_implementation false [get_files -all c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/source/PCIe_IP-PCIE_X0Y0.xdc]
+set_property used_in_implementation false [get_files -all c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/PCIe_IP/synth/PCIe_IP_ooc.xdc]
 
-read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram.xci
-set_property used_in_implementation false [get_files -all c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/bar_ram/bar_ram_ooc.xdc]
+read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/bar_ram/bar_ram.xci
+set_property used_in_implementation false [get_files -all c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/bar_ram/bar_ram_ooc.xdc]
 
-read_ip -quiet C:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram.xci
-set_property used_in_implementation false [get_files -all c:/HTGK7-NRCA-DMA/HTGK7-NRCA-DMA.srcs/sources_1/ip/dma_data_ram/dma_data_ram_ooc.xdc]
+read_ip -quiet C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/dma_data_ram/dma_data_ram.xci
+set_property used_in_implementation false [get_files -all c:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/ip/dma_data_ram/dma_data_ram_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -71,11 +71,11 @@ set_property used_in_implementation false [get_files -all c:/HTGK7-NRCA-DMA/HTGK
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc
-set_property used_in_implementation false [get_files C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_fmc.xdc]
+read_xdc C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc
+set_property used_in_implementation false [get_files C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc]
 
-read_xdc C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc
-set_property used_in_implementation false [get_files C:/HTGK7-Vivado-Project/htg_kintex_pw/htg_kintex_pw.srcs/constrs_1/new/constr_pcie.xdc]
+read_xdc C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc
+set_property used_in_implementation false [get_files C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
