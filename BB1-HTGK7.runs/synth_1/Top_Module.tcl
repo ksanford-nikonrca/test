@@ -34,6 +34,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v
 read_vhdl -library xil_defaultlib {
   C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd
+  C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd
   C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd
   C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd
   C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd

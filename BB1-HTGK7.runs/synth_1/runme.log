@@ -16,9 +16,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325
 INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xc7k325tfbg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 945700 
+INFO: Helper process launched with PID 956360 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 864.160 ; gain = 176.492
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 864.473 ; gain = 176.535
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-1565] actual for formal port reg_addr is neither a static name nor a globally static expression [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1177]
 INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:103]
@@ -162,8 +162,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:589]
 INFO: [Synth 8-6155] done synthesizing module 'PCIe_pipe_clock' (4#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_pipe_clock.v:67]
-INFO: [Synth 8-3491] module 'PCIe_IP' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/PCIe_IP_stub.vhdl:5' bound to instance 'PCIe_IP_i' of component 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:674]
-INFO: [Synth 8-638] synthesizing module 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/PCIe_IP_stub.vhdl:187]
+INFO: [Synth 8-3491] module 'PCIe_IP' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/PCIe_IP_stub.vhdl:5' bound to instance 'PCIe_IP_i' of component 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:674]
+INFO: [Synth 8-638] synthesizing module 'PCIe_IP' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/PCIe_IP_stub.vhdl:187]
 INFO: [Synth 8-256] done synthesizing module 'PCIe_support' (5#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/PCIe_support.vhd:330]
 	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter TCQ bound to: 1000 - type: integer 
@@ -173,8 +173,8 @@ INFO: [Synth 8-638] synthesizing module 'pcie_app' [C:/BB1-HTGK7/BB1-HTGK7.srcs/
 	Parameter TCQ bound to: 1000 - type: integer 
 INFO: [Synth 8-3491] module 'pcie_bars_dma' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:33' bound to instance 'pcie_bars_dma_compoent' of component 'pcie_bars_dma' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:259]
 INFO: [Synth 8-638] synthesizing module 'pcie_bars_dma' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:81]
-INFO: [Synth 8-3491] module 'bar_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/bar_ram_stub.vhdl:5' bound to instance 'bar2_ram_comp' of component 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:246]
-INFO: [Synth 8-638] synthesizing module 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/bar_ram_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'bar_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/bar_ram_stub.vhdl:5' bound to instance 'bar2_ram_comp' of component 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'bar_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/bar_ram_stub.vhdl:18]
 WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:260]
 WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:300]
 WARNING: [Synth 8-614] signal 'rst_n' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:581]
@@ -183,97 +183,98 @@ WARNING: [Synth 8-6014] Unused sequential element target_bar_reg was removed.  [
 INFO: [Synth 8-256] done synthesizing module 'pcie_bars_dma' (6#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_bars_dma.vhd:81]
 WARNING: [Synth 8-3848] Net cfg_turnoff_ok in module/entity pcie_app does not have driver. [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:64]
 INFO: [Synth 8-256] done synthesizing module 'pcie_app' (7#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/pcie_app.vhd:132]
-INFO: [Synth 8-3491] module 'dma_data_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/dma_data_ram_stub.vhdl:5' bound to instance 'dma_ram' of component 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1133]
-INFO: [Synth 8-638] synthesizing module 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-930148-KWELLS/realtime/dma_data_ram_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'dma_data_ram' declared at 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/dma_data_ram_stub.vhdl:5' bound to instance 'dma_ram' of component 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1133]
+INFO: [Synth 8-638] synthesizing module 'dma_data_ram' [C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/.Xil/Vivado-947372-KWELLS/realtime/dma_data_ram_stub.vhdl:18]
 WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1146]
 INFO: [Synth 8-3491] module 'user_ip_lite_top' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:10' bound to instance 'user_ip_inst' of component 'user_ip_lite_top' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1163]
 INFO: [Synth 8-638] synthesizing module 'user_ip_lite_top' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:44]
 INFO: [Synth 8-3491] module 'user_ip_registers_mainProjectTop' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:9' bound to instance 'user_ip_registers_mainProjectTop_inst' of component 'user_ip_registers_mainProjectTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'user_ip_registers_mainProjectTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
-WARNING: [Synth 8-614] signal 'interrupt_reqSig' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
-WARNING: [Synth 8-614] signal 'dmaDataDepthReg' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:271]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
+WARNING: [Synth 8-614] signal 'interrupt_reqSig' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:289]
+WARNING: [Synth 8-614] signal 'dmaDataDepthReg' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:289]
+WARNING: [Synth 8-614] signal 'lsr_cntrl_reg' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:289]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
 INFO: [Synth 8-638] synthesizing module 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:23]
 INFO: [Synth 8-256] done synthesizing module 'DirectionChange' (8#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:23]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:425]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:436]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:447]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
-INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:458]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:445]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:456]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_LA_32_33_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:456]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HA_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:467]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
+INFO: [Synth 8-3491] module 'DirectionChange' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/DirectionChange.vhd:14' bound to instance 'DIFF_HB_TS' of component 'DirectionChange' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:478]
 INFO: [Synth 8-638] synthesizing module 'wAvisTop' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:90]
 INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:141]
 INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:148]
@@ -301,7 +302,12 @@ INFO: [Synth 8-226] default block is never used [C:/BB1-HTGK7/BB1-HTGK7.srcs/sou
 WARNING: [Synth 8-6014] Unused sequential element newDataIdxSig_i_reg was removed.  [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'dmaSignalsGenerator' (15#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/dmaSignalsGenerator.vhd:25]
 INFO: [Synth 8-256] done synthesizing module 'wAvisTop' (16#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/wAvisTop.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'user_ip_registers_mainProjectTop' (17#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
+INFO: [Synth 8-3491] module 'LSR_CNTRL' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd:7' bound to instance 'lsr_cntrl_inst' of component 'LSR_CNTRL' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'LSR_CNTRL' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'LSR_CNTRL' (17#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd:20]
+INFO: [Synth 8-3491] module 'LSR_CNTRL' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd:7' bound to instance 'lsr_cntrl_inst' of component 'LSR_CNTRL' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:740]
+INFO: [Synth 8-3491] module 'LSR_CNTRL' declared at 'C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/LSR_CNTRL.vhd:7' bound to instance 'lsr_cntrl_inst' of component 'LSR_CNTRL' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_registers_mainProjectTop' (18#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_registers_mainProjectTop.vhd:49]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: default - type: string 
@@ -702,9 +708,9 @@ INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF'
 	Parameter IOSTANDARD bound to: default - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-113] binding component instance 'DIFF_HB_IO_BUFF' to cell 'IOBUF' [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:171]
-INFO: [Synth 8-256] done synthesizing module 'user_ip_lite_top' (18#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'user_ip_lite_top' (19#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/imports/user_ip_srcs/user_ip_lite_top.vhd:44]
 WARNING: [Synth 8-614] signal 'user_reset_q' is read in the process but is not in the sensitivity list [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:1232]
-INFO: [Synth 8-256] done synthesizing module 'Top_Module' (19#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module' (20#1) [C:/BB1-HTGK7/BB1-HTGK7.srcs/sources_1/new/Top_Module.vhd:103]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[30]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[29]
 WARNING: [Synth 8-3331] design dmaSignalsGenerator has unconnected port ctrlRegIn[28]
@@ -807,7 +813,7 @@ WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[
 WARNING: [Synth 8-3331] design line_sensor_adc has unconnected port lsAdcConfig[25]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1008.602 ; gain = 320.934
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1009.828 ; gain = 321.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -820,10 +826,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.602 ; gain = 320.934
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.828 ; gain = 321.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1008.602 ; gain = 320.934
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.828 ; gain = 321.891
 ---------------------------------------------------------------------------------
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
@@ -843,35 +849,30 @@ Finished Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constra
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_fmc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_p[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:139]
-WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_n[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:140]
-WARNING: [Vivado 12-508] No pins matched 'top_level_i/util_ds_buf_0/IBUF_OUT'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:171]
-WARNING: [Vivado 12-584] No ports matched 'sys_clk_pcie_clk_p[0]'. [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc:195]
 Finished Parsing XDC File [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/BB1-HTGK7/BB1-HTGK7.srcs/constrs_1/imports/constraints/constr_pcie.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1314.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1316.020 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 80 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 80 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.411 . Memory (MB): peak = 1314.160 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.403 . Memory (MB): peak = 1316.020 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'dma_ram' at clock pin 'clkb' is different from the actual clock period '4.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'app/pcie_bars_dma_compoent/bar2_ram_comp' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '8.000' specified during out-of-context synthesis of instance 'pcie_support_i/PCIe_IP_i' at clock pin 'pipe_oobclk_in' is different from the actual clock period '4.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tfbg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -880,7 +881,7 @@ Applied set_property DONT_TOUCH = true for pcie_support_i/PCIe_IP_i. (constraint
 Applied set_property DONT_TOUCH = true for app/pcie_bars_dma_compoent/bar2_ram_comp. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for dma_ram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'rx_fsm_state_reg' in module 'pcie_bars_dma'
 INFO: [Synth 8-802] inferred FSM for state register 'dma_fsm_state_reg' in module 'pcie_bars_dma'
@@ -889,6 +890,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'mstStateR_reg' in module 'l
 INFO: [Synth 8-802] inferred FSM for state register 'dataGatherState_reg' in module 'line_sensor_buffering'
 INFO: [Synth 8-802] inferred FSM for state register 'pixelCounterState_reg' in module 'dmaSignalsGenerator'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DirectionChange'
+INFO: [Synth 8-802] inferred FSM for state register 'LASER_state_reg' in module 'LSR_CNTRL'
 INFO: [Synth 8-5546] ROM "softReset" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "DIFF_IO_LA_i_o" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "DIFF_IO_LA_HA_i_o" won't be mapped to RAM because it is too sparse
@@ -991,8 +993,19 @@ INFO: [Synth 8-3354] encoded FSM with state register 'pixelCounterState_reg' usi
               dir_out_in |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DirectionChange'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            st0_disabled |                              000 |                              000
+             st1_enabled |                              001 |                              001
+           st2_pulse_rdy |                              010 |                              010
+            st3_pulse_on |                              011 |                              011
+           st4_pulse_off |                              100 |                              100
+         st5_disable_rdy |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LASER_state_reg' using encoding 'sequential' in module 'LSR_CNTRL'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM RAM_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -1010,7 +1023,7 @@ Report RTL Partitions:
 |5     |line_sensor_core__GBM4                |           1|     17030|
 |6     |line_sensor_core__GBM5                |           1|     20254|
 |7     |wAvisTop__GC0                         |           1|      1995|
-|8     |user_ip_registers_mainProjectTop__GC0 |           1|      4009|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      5722|
 |9     |Top_Module__GC0                       |           1|      3621|
 +------+--------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -1018,7 +1031,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 32    
+	   2 Input     32 Bit       Adders := 35    
 	   2 Input     16 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
@@ -1031,7 +1044,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               64 Bit    Registers := 3     
 	               48 Bit    Registers := 1     
-	               32 Bit    Registers := 65    
+	               32 Bit    Registers := 68    
 	               16 Bit    Registers := 15    
 	               12 Bit    Registers := 4107  
 	               11 Bit    Registers := 1     
@@ -1043,16 +1056,17 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 10    
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 318   
+	                1 Bit    Registers := 324   
 +---RAMs : 
 	              12K Bit         RAMs := 4     
 +---Muxes : 
 	  12 Input     64 Bit        Muxes := 1     
 	  13 Input     64 Bit        Muxes := 3     
 	   2 Input     64 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 34    
+	   2 Input     32 Bit        Muxes := 40    
 	   5 Input     32 Bit        Muxes := 16    
 	   4 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 9     
 	  12 Input     16 Bit        Muxes := 1     
 	   6 Input     12 Bit        Muxes := 1     
@@ -1063,7 +1077,7 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 15    
 	  12 Input      8 Bit        Muxes := 3     
 	  13 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 10    
 	   5 Input      5 Bit        Muxes := 4     
 	   2 Input      5 Bit        Muxes := 5     
 	  12 Input      5 Bit        Muxes := 1     
@@ -1074,17 +1088,19 @@ Detailed RTL Component Info :
 	   3 Input      4 Bit        Muxes := 3     
 	  29 Input      4 Bit        Muxes := 1     
 	  36 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 24    
+	   2 Input      3 Bit        Muxes := 36    
 	   5 Input      3 Bit        Muxes := 4     
 	   4 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 82    
 	   2 Input      2 Bit        Muxes := 165   
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 219   
+	   2 Input      1 Bit        Muxes := 228   
 	   5 Input      1 Bit        Muxes := 64    
 	   7 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 171   
-	  20 Input      1 Bit        Muxes := 18    
+	   6 Input      1 Bit        Muxes := 15    
+	  21 Input      1 Bit        Muxes := 18    
 	   3 Input      1 Bit        Muxes := 2     
 	  12 Input      1 Bit        Muxes := 16    
 	  13 Input      1 Bit        Muxes := 23    
@@ -1876,6 +1892,48 @@ Detailed RTL Component Info :
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 2     
+Module LSR_CNTRL__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 5     
+Module LSR_CNTRL__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 5     
+Module LSR_CNTRL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 5     
 Module user_ip_registers_mainProjectTop 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1888,9 +1946,10 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 19    
-	  20 Input      1 Bit        Muxes := 18    
+	  21 Input      1 Bit        Muxes := 18    
 Module PCIe_pipe_clock 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1952,6 +2011,7 @@ INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "lsr_cntrl_reg" won't be mapped to RAM because it is too sparse
 RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
 INFO: [Synth 8-6430] The Block RAM "Top_Module/LS_Buffering_inst/gen_ls_ram[0].ram_lsX/RAM_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
@@ -2159,7 +2219,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (spi_inst/\spiStartPixelR_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (adc_inst/\lsAdcDebug_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:42 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:41 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2199,7 +2259,7 @@ Report RTL Partitions:
 |5     |line_sensor_core__GBM4                |           4|      1803|
 |6     |line_sensor_core__GBM5                |           4|       663|
 |7     |wAvisTop__GC0                         |           1|      1540|
-|8     |user_ip_registers_mainProjectTop__GC0 |           1|      2865|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      3938|
 |9     |Top_Module__GC0                       |           1|      2821|
 +------+--------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -2209,13 +2269,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/
 INFO: [Synth 8-5578] Moved timing constraint from pin 'pcie_support_i/PCIe_IP_i/user_clk_out' to pin 'pcie_support_i/PCIe_IP_i/bbstub_user_clk_out/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:52 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:51 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:58 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:59 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2239,16 +2299,17 @@ Report RTL Partitions:
 +------+--------------------------------------+------------+----------+
 |      |RTL Partition                         |Replication |Instances |
 +------+--------------------------------------+------------+----------+
-|1     |line_sensor_core__GBM0                |           4|     25172|
+|1     |line_sensor_core__GBM0                |           3|     25172|
 |2     |line_sensor_core__GBM1                |           4|       251|
 |3     |line_sensor_core__GBM2                |           4|       233|
 |4     |line_sensor_core__GBM3                |           4|       558|
 |5     |line_sensor_core__GBM4                |           1|      1782|
 |6     |line_sensor_core__GBM5                |           4|       621|
 |7     |wAvisTop__GC0                         |           1|       840|
-|8     |user_ip_registers_mainProjectTop__GC0 |           1|      2734|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      3807|
 |9     |Top_Module__GC0                       |           1|      2685|
-|10    |line_sensor_core__GBM4__1             |           3|       970|
+|10    |line_sensor_core__GBM0__1             |           1|     25172|
+|11    |line_sensor_core__GBM4__1             |           3|       970|
 +------+--------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -2258,37 +2319,38 @@ INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_
 INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[2].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance wAvisTop_insti_25/LS_Buffering_inst/gen_ls_ram[3].ram_lsX/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:02:18 . Memory (MB): peak = 1314.160 ; gain = 626.492
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:02:19 . Memory (MB): peak = 1316.020 ; gain = 628.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------------------------------+------------+----------+
 |      |RTL Partition                         |Replication |Instances |
 +------+--------------------------------------+------------+----------+
-|1     |line_sensor_core__GBM0                |           4|     18384|
+|1     |line_sensor_core__GBM0                |           3|     18384|
 |2     |line_sensor_core__GBM1                |           1|       134|
 |3     |line_sensor_core__GBM2                |           1|       176|
 |4     |line_sensor_core__GBM3                |           1|       272|
 |5     |line_sensor_core__GBM4                |           1|       956|
 |6     |line_sensor_core__GBM5                |           1|       295|
 |7     |wAvisTop__GC0                         |           1|       363|
-|8     |user_ip_registers_mainProjectTop__GC0 |           1|      1574|
+|8     |user_ip_registers_mainProjectTop__GC0 |           1|      1861|
 |9     |Top_Module__GC0                       |           1|      1613|
-|10    |line_sensor_core__GBM4__1             |           1|       632|
-|11    |line_sensor_core__GBM1__1             |           1|       134|
-|12    |line_sensor_core__GBM2__1             |           1|       176|
-|13    |line_sensor_core__GBM3__1             |           1|       272|
-|14    |line_sensor_core__GBM5__1             |           1|       295|
-|15    |line_sensor_core__GBM1__2             |           1|       134|
-|16    |line_sensor_core__GBM2__2             |           1|       176|
-|17    |line_sensor_core__GBM3__2             |           1|       272|
-|18    |line_sensor_core__GBM4__2             |           1|       632|
-|19    |line_sensor_core__GBM5__2             |           1|       295|
-|20    |line_sensor_core__GBM1__3             |           1|       134|
-|21    |line_sensor_core__GBM2__3             |           1|       176|
-|22    |line_sensor_core__GBM3__3             |           1|       272|
-|23    |line_sensor_core__GBM4__3             |           1|       632|
-|24    |line_sensor_core__GBM5__3             |           1|       295|
+|10    |line_sensor_core__GBM0__1             |           1|     18384|
+|11    |line_sensor_core__GBM4__1             |           1|       632|
+|12    |line_sensor_core__GBM1__1             |           1|       134|
+|13    |line_sensor_core__GBM2__1             |           1|       176|
+|14    |line_sensor_core__GBM3__1             |           1|       272|
+|15    |line_sensor_core__GBM5__1             |           1|       295|
+|16    |line_sensor_core__GBM1__2             |           1|       134|
+|17    |line_sensor_core__GBM2__2             |           1|       176|
+|18    |line_sensor_core__GBM3__2             |           1|       272|
+|19    |line_sensor_core__GBM4__2             |           1|       632|
+|20    |line_sensor_core__GBM5__2             |           1|       295|
+|21    |line_sensor_core__GBM1__3             |           1|       134|
+|22    |line_sensor_core__GBM2__3             |           1|       176|
+|23    |line_sensor_core__GBM3__3             |           1|       272|
+|24    |line_sensor_core__GBM4__3             |           1|       632|
+|25    |line_sensor_core__GBM5__3             |           1|       295|
 +------+--------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2310,7 +2372,7 @@ INFO: [Synth 8-6837] The timing for the instance user_ip_inst/user_ip_registers_
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:54 ; elapsed = 00:02:36 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished IO Insertion : Time (s): cpu = 00:01:59 ; elapsed = 00:02:37 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2323,7 +2385,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:02:36 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:00 ; elapsed = 00:02:38 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2335,25 +2397,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:12 ; elapsed = 00:02:54 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:17 ; elapsed = 00:02:55 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:12 ; elapsed = 00:02:54 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:17 ; elapsed = 00:02:56 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:55 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:19 ; elapsed = 00:02:57 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:56 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:02:57 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2377,22 +2439,22 @@ Report Cell Usage:
 |3     |dma_data_ram_bbox_2 |     1|
 |4     |BUFG                |     4|
 |5     |BUFGCTRL            |     1|
-|6     |CARRY4              |   226|
+|6     |CARRY4              |   262|
 |7     |IBUFDS_GTE2         |     1|
-|8     |LUT1                |   142|
-|9     |LUT2                |   579|
-|10    |LUT3                |   604|
-|11    |LUT4                |  1061|
-|12    |LUT5                |   970|
-|13    |LUT6                | 17246|
+|8     |LUT1                |   145|
+|9     |LUT2                |   655|
+|10    |LUT3                |   578|
+|11    |LUT4                |  1045|
+|12    |LUT5                |   962|
+|13    |LUT6                | 17379|
 |14    |MMCME2_ADV          |     1|
-|15    |MUXF7               |  6572|
-|16    |MUXF8               |  3286|
+|15    |MUXF7               |  6561|
+|16    |MUXF8               |  3274|
 |17    |RAMB18E1            |     4|
 |18    |FDCE                |   281|
 |19    |FDPE                |    80|
-|20    |FDRE                | 52605|
-|21    |FDSE                |    59|
+|20    |FDRE                | 52709|
+|21    |FDSE                |    64|
 |22    |LDC                 |     1|
 |23    |IBUF                |    19|
 |24    |IOBUF               |    80|
@@ -2403,143 +2465,146 @@ Report Instance Areas:
 +------+--------------------------------------------------+---------------------------------+------+
 |      |Instance                                          |Module                           |Cells |
 +------+--------------------------------------------------+---------------------------------+------+
-|1     |top                                               |                                 | 84531|
+|1     |top                                               |                                 | 84815|
 |2     |  app                                             |pcie_app                         |   897|
 |3     |    pcie_bars_dma_compoent                        |pcie_bars_dma                    |   897|
 |4     |  pcie_support_i                                  |PCIe_support                     |   546|
 |5     |    pipe_clock_i                                  |PCIe_pipe_clock                  |    44|
-|6     |  user_ip_inst                                    |user_ip_lite_top                 | 82793|
-|7     |    user_ip_registers_mainProjectTop_inst         |user_ip_registers_mainProjectTop | 82682|
-|8     |      \gen_DIFF_HA_TS[0].DIFF_HA_TS               |DirectionChange                  |     8|
-|9     |      \gen_DIFF_HA_TS[10].DIFF_HA_TS              |DirectionChange_0                |     8|
-|10    |      \gen_DIFF_HA_TS[11].DIFF_HA_TS              |DirectionChange_1                |     8|
-|11    |      \gen_DIFF_HA_TS[12].DIFF_HA_TS              |DirectionChange_2                |     8|
-|12    |      \gen_DIFF_HA_TS[13].DIFF_HA_TS              |DirectionChange_3                |     8|
-|13    |      \gen_DIFF_HA_TS[14].DIFF_HA_TS              |DirectionChange_4                |     8|
-|14    |      \gen_DIFF_HA_TS[15].DIFF_HA_TS              |DirectionChange_5                |     8|
-|15    |      \gen_DIFF_HA_TS[16].DIFF_HA_TS              |DirectionChange_6                |     8|
-|16    |      \gen_DIFF_HA_TS[17].DIFF_HA_TS              |DirectionChange_7                |     8|
-|17    |      \gen_DIFF_HA_TS[18].DIFF_HA_TS              |DirectionChange_8                |     8|
-|18    |      \gen_DIFF_HA_TS[19].DIFF_HA_TS              |DirectionChange_9                |     8|
-|19    |      \gen_DIFF_HA_TS[1].DIFF_HA_TS               |DirectionChange_10               |     8|
-|20    |      \gen_DIFF_HA_TS[20].DIFF_HA_TS              |DirectionChange_11               |     8|
-|21    |      \gen_DIFF_HA_TS[21].DIFF_HA_TS              |DirectionChange_12               |     8|
-|22    |      \gen_DIFF_HA_TS[22].DIFF_HA_TS              |DirectionChange_13               |     8|
-|23    |      \gen_DIFF_HA_TS[23].DIFF_HA_TS              |DirectionChange_14               |     8|
-|24    |      \gen_DIFF_HA_TS[2].DIFF_HA_TS               |DirectionChange_15               |     8|
-|25    |      \gen_DIFF_HA_TS[3].DIFF_HA_TS               |DirectionChange_16               |     8|
-|26    |      \gen_DIFF_HA_TS[4].DIFF_HA_TS               |DirectionChange_17               |     8|
-|27    |      \gen_DIFF_HA_TS[5].DIFF_HA_TS               |DirectionChange_18               |     8|
-|28    |      \gen_DIFF_HA_TS[6].DIFF_HA_TS               |DirectionChange_19               |     8|
-|29    |      \gen_DIFF_HA_TS[7].DIFF_HA_TS               |DirectionChange_20               |     8|
-|30    |      \gen_DIFF_HA_TS[8].DIFF_HA_TS               |DirectionChange_21               |     8|
-|31    |      \gen_DIFF_HA_TS[9].DIFF_HA_TS               |DirectionChange_22               |     8|
-|32    |      \gen_DIFF_HB_TS[0].DIFF_HB_TS               |DirectionChange_23               |     8|
-|33    |      \gen_DIFF_HB_TS[10].DIFF_HB_TS              |DirectionChange_24               |     8|
-|34    |      \gen_DIFF_HB_TS[11].DIFF_HB_TS              |DirectionChange_25               |     8|
-|35    |      \gen_DIFF_HB_TS[12].DIFF_HB_TS              |DirectionChange_26               |     8|
-|36    |      \gen_DIFF_HB_TS[13].DIFF_HB_TS              |DirectionChange_27               |     8|
-|37    |      \gen_DIFF_HB_TS[14].DIFF_HB_TS              |DirectionChange_28               |     8|
-|38    |      \gen_DIFF_HB_TS[15].DIFF_HB_TS              |DirectionChange_29               |     8|
-|39    |      \gen_DIFF_HB_TS[16].DIFF_HB_TS              |DirectionChange_30               |     8|
-|40    |      \gen_DIFF_HB_TS[17].DIFF_HB_TS              |DirectionChange_31               |     8|
-|41    |      \gen_DIFF_HB_TS[18].DIFF_HB_TS              |DirectionChange_32               |     8|
-|42    |      \gen_DIFF_HB_TS[19].DIFF_HB_TS              |DirectionChange_33               |     8|
-|43    |      \gen_DIFF_HB_TS[1].DIFF_HB_TS               |DirectionChange_34               |     8|
-|44    |      \gen_DIFF_HB_TS[20].DIFF_HB_TS              |DirectionChange_35               |     8|
-|45    |      \gen_DIFF_HB_TS[21].DIFF_HB_TS              |DirectionChange_36               |     9|
-|46    |      \gen_DIFF_HB_TS[2].DIFF_HB_TS               |DirectionChange_37               |     8|
-|47    |      \gen_DIFF_HB_TS[3].DIFF_HB_TS               |DirectionChange_38               |     8|
-|48    |      \gen_DIFF_HB_TS[4].DIFF_HB_TS               |DirectionChange_39               |     8|
-|49    |      \gen_DIFF_HB_TS[5].DIFF_HB_TS               |DirectionChange_40               |     8|
-|50    |      \gen_DIFF_HB_TS[6].DIFF_HB_TS               |DirectionChange_41               |     8|
-|51    |      \gen_DIFF_HB_TS[7].DIFF_HB_TS               |DirectionChange_42               |     8|
-|52    |      \gen_DIFF_HB_TS[8].DIFF_HB_TS               |DirectionChange_43               |     8|
-|53    |      \gen_DIFF_HB_TS[9].DIFF_HB_TS               |DirectionChange_44               |     8|
-|54    |      \gen_DIFF_LA_32_33_TS[32].DIFF_LA_32_33_TS  |DirectionChange_45               |     8|
-|55    |      \gen_DIFF_LA_32_33_TS[33].DIFF_LA_32_33_TS  |DirectionChange_46               |     8|
-|56    |      \gen_DIFF_LA_TS[0].DIFF_LA_TS               |DirectionChange_47               |     8|
-|57    |      \gen_DIFF_LA_TS[10].DIFF_LA_TS              |DirectionChange_48               |     8|
-|58    |      \gen_DIFF_LA_TS[11].DIFF_LA_TS              |DirectionChange_49               |     8|
-|59    |      \gen_DIFF_LA_TS[12].DIFF_LA_TS              |DirectionChange_50               |     8|
-|60    |      \gen_DIFF_LA_TS[13].DIFF_LA_TS              |DirectionChange_51               |     8|
-|61    |      \gen_DIFF_LA_TS[14].DIFF_LA_TS              |DirectionChange_52               |     8|
-|62    |      \gen_DIFF_LA_TS[15].DIFF_LA_TS              |DirectionChange_53               |     8|
-|63    |      \gen_DIFF_LA_TS[16].DIFF_LA_TS              |DirectionChange_54               |     8|
-|64    |      \gen_DIFF_LA_TS[17].DIFF_LA_TS              |DirectionChange_55               |     8|
-|65    |      \gen_DIFF_LA_TS[18].DIFF_LA_TS              |DirectionChange_56               |     8|
-|66    |      \gen_DIFF_LA_TS[19].DIFF_LA_TS              |DirectionChange_57               |     8|
-|67    |      \gen_DIFF_LA_TS[1].DIFF_LA_TS               |DirectionChange_58               |     8|
-|68    |      \gen_DIFF_LA_TS[20].DIFF_LA_TS              |DirectionChange_59               |     8|
-|69    |      \gen_DIFF_LA_TS[21].DIFF_LA_TS              |DirectionChange_60               |     8|
-|70    |      \gen_DIFF_LA_TS[22].DIFF_LA_TS              |DirectionChange_61               |     8|
-|71    |      \gen_DIFF_LA_TS[23].DIFF_LA_TS              |DirectionChange_62               |     8|
-|72    |      \gen_DIFF_LA_TS[24].DIFF_LA_TS              |DirectionChange_63               |     8|
-|73    |      \gen_DIFF_LA_TS[25].DIFF_LA_TS              |DirectionChange_64               |     8|
-|74    |      \gen_DIFF_LA_TS[26].DIFF_LA_TS              |DirectionChange_65               |     8|
-|75    |      \gen_DIFF_LA_TS[27].DIFF_LA_TS              |DirectionChange_66               |     8|
-|76    |      \gen_DIFF_LA_TS[28].DIFF_LA_TS              |DirectionChange_67               |     8|
-|77    |      \gen_DIFF_LA_TS[29].DIFF_LA_TS              |DirectionChange_68               |     8|
-|78    |      \gen_DIFF_LA_TS[2].DIFF_LA_TS               |DirectionChange_69               |     8|
-|79    |      \gen_DIFF_LA_TS[30].DIFF_LA_TS              |DirectionChange_70               |     8|
-|80    |      \gen_DIFF_LA_TS[31].DIFF_LA_TS              |DirectionChange_71               |     8|
-|81    |      \gen_DIFF_LA_TS[3].DIFF_LA_TS               |DirectionChange_72               |     8|
-|82    |      \gen_DIFF_LA_TS[4].DIFF_LA_TS               |DirectionChange_73               |     8|
-|83    |      \gen_DIFF_LA_TS[5].DIFF_LA_TS               |DirectionChange_74               |     8|
-|84    |      \gen_DIFF_LA_TS[6].DIFF_LA_TS               |DirectionChange_75               |     8|
-|85    |      \gen_DIFF_LA_TS[7].DIFF_LA_TS               |DirectionChange_76               |     8|
-|86    |      \gen_DIFF_LA_TS[8].DIFF_LA_TS               |DirectionChange_77               |     8|
-|87    |      \gen_DIFF_LA_TS[9].DIFF_LA_TS               |DirectionChange_78               |     8|
-|88    |      wAvisTop_inst                               |wAvisTop                         | 80853|
-|89    |        L1_inst                                   |line_sensor_core                 | 20332|
-|90    |          adc_inst                                |line_sensor_adc_91               |  1821|
-|91    |          spi_inst                                |line_sensor_spi_92               |   245|
-|92    |            spi_master_inst                       |spi_master_93                    |   194|
-|93    |        L2_inst                                   |line_sensor_core_79              | 19978|
-|94    |          adc_inst                                |line_sensor_adc_88               |  1721|
-|95    |          spi_inst                                |line_sensor_spi_89               |   245|
-|96    |            spi_master_inst                       |spi_master_90                    |   194|
-|97    |        L3_inst                                   |line_sensor_core_80              | 19977|
-|98    |          adc_inst                                |line_sensor_adc_85               |  1719|
-|99    |          spi_inst                                |line_sensor_spi_86               |   246|
-|100   |            spi_master_inst                       |spi_master_87                    |   195|
-|101   |        L4_inst                                   |line_sensor_core_81              | 20154|
-|102   |          adc_inst                                |line_sensor_adc                  |  1750|
-|103   |          spi_inst                                |line_sensor_spi                  |   390|
-|104   |            spi_master_inst                       |spi_master                       |   218|
-|105   |        LS_Buffering_inst                         |line_sensor_buffering            |   245|
-|106   |          \gen_ls_ram[0].ram_lsX                  |dpRam                            |    13|
-|107   |          \gen_ls_ram[1].ram_lsX                  |dpRam_82                         |    13|
-|108   |          \gen_ls_ram[2].ram_lsX                  |dpRam_83                         |     1|
-|109   |          \gen_ls_ram[3].ram_lsX                  |dpRam_84                         |     1|
-|110   |        dmaSignalsGeneratorInst                   |dmaSignalsGenerator              |   167|
+|6     |  user_ip_inst                                    |user_ip_lite_top                 | 83080|
+|7     |    user_ip_registers_mainProjectTop_inst         |user_ip_registers_mainProjectTop | 82969|
+|8     |      \GEN_ARRAY[0].lsr_cntrl_inst                |LSR_CNTRL                        |   118|
+|9     |      \GEN_ARRAY[1].lsr_cntrl_inst                |LSR_CNTRL_0                      |   118|
+|10    |      \GEN_ARRAY[2].lsr_cntrl_inst                |LSR_CNTRL_1                      |   118|
+|11    |      \gen_DIFF_HA_TS[0].DIFF_HA_TS               |DirectionChange                  |     8|
+|12    |      \gen_DIFF_HA_TS[10].DIFF_HA_TS              |DirectionChange_2                |     8|
+|13    |      \gen_DIFF_HA_TS[11].DIFF_HA_TS              |DirectionChange_3                |     8|
+|14    |      \gen_DIFF_HA_TS[12].DIFF_HA_TS              |DirectionChange_4                |     8|
+|15    |      \gen_DIFF_HA_TS[13].DIFF_HA_TS              |DirectionChange_5                |     8|
+|16    |      \gen_DIFF_HA_TS[14].DIFF_HA_TS              |DirectionChange_6                |     8|
+|17    |      \gen_DIFF_HA_TS[15].DIFF_HA_TS              |DirectionChange_7                |     8|
+|18    |      \gen_DIFF_HA_TS[16].DIFF_HA_TS              |DirectionChange_8                |     8|
+|19    |      \gen_DIFF_HA_TS[17].DIFF_HA_TS              |DirectionChange_9                |     8|
+|20    |      \gen_DIFF_HA_TS[18].DIFF_HA_TS              |DirectionChange_10               |     8|
+|21    |      \gen_DIFF_HA_TS[19].DIFF_HA_TS              |DirectionChange_11               |     8|
+|22    |      \gen_DIFF_HA_TS[1].DIFF_HA_TS               |DirectionChange_12               |     8|
+|23    |      \gen_DIFF_HA_TS[20].DIFF_HA_TS              |DirectionChange_13               |     8|
+|24    |      \gen_DIFF_HA_TS[21].DIFF_HA_TS              |DirectionChange_14               |     8|
+|25    |      \gen_DIFF_HA_TS[22].DIFF_HA_TS              |DirectionChange_15               |     8|
+|26    |      \gen_DIFF_HA_TS[23].DIFF_HA_TS              |DirectionChange_16               |     8|
+|27    |      \gen_DIFF_HA_TS[2].DIFF_HA_TS               |DirectionChange_17               |     8|
+|28    |      \gen_DIFF_HA_TS[3].DIFF_HA_TS               |DirectionChange_18               |     8|
+|29    |      \gen_DIFF_HA_TS[4].DIFF_HA_TS               |DirectionChange_19               |     8|
+|30    |      \gen_DIFF_HA_TS[5].DIFF_HA_TS               |DirectionChange_20               |     8|
+|31    |      \gen_DIFF_HA_TS[6].DIFF_HA_TS               |DirectionChange_21               |     8|
+|32    |      \gen_DIFF_HA_TS[7].DIFF_HA_TS               |DirectionChange_22               |     8|
+|33    |      \gen_DIFF_HA_TS[8].DIFF_HA_TS               |DirectionChange_23               |     8|
+|34    |      \gen_DIFF_HA_TS[9].DIFF_HA_TS               |DirectionChange_24               |     8|
+|35    |      \gen_DIFF_HB_TS[0].DIFF_HB_TS               |DirectionChange_25               |     8|
+|36    |      \gen_DIFF_HB_TS[10].DIFF_HB_TS              |DirectionChange_26               |     8|
+|37    |      \gen_DIFF_HB_TS[11].DIFF_HB_TS              |DirectionChange_27               |     8|
+|38    |      \gen_DIFF_HB_TS[12].DIFF_HB_TS              |DirectionChange_28               |     8|
+|39    |      \gen_DIFF_HB_TS[13].DIFF_HB_TS              |DirectionChange_29               |     8|
+|40    |      \gen_DIFF_HB_TS[14].DIFF_HB_TS              |DirectionChange_30               |     8|
+|41    |      \gen_DIFF_HB_TS[15].DIFF_HB_TS              |DirectionChange_31               |     8|
+|42    |      \gen_DIFF_HB_TS[16].DIFF_HB_TS              |DirectionChange_32               |     8|
+|43    |      \gen_DIFF_HB_TS[17].DIFF_HB_TS              |DirectionChange_33               |     8|
+|44    |      \gen_DIFF_HB_TS[18].DIFF_HB_TS              |DirectionChange_34               |     8|
+|45    |      \gen_DIFF_HB_TS[19].DIFF_HB_TS              |DirectionChange_35               |     8|
+|46    |      \gen_DIFF_HB_TS[1].DIFF_HB_TS               |DirectionChange_36               |     8|
+|47    |      \gen_DIFF_HB_TS[20].DIFF_HB_TS              |DirectionChange_37               |     8|
+|48    |      \gen_DIFF_HB_TS[21].DIFF_HB_TS              |DirectionChange_38               |     9|
+|49    |      \gen_DIFF_HB_TS[2].DIFF_HB_TS               |DirectionChange_39               |     8|
+|50    |      \gen_DIFF_HB_TS[3].DIFF_HB_TS               |DirectionChange_40               |     8|
+|51    |      \gen_DIFF_HB_TS[4].DIFF_HB_TS               |DirectionChange_41               |     8|
+|52    |      \gen_DIFF_HB_TS[5].DIFF_HB_TS               |DirectionChange_42               |     8|
+|53    |      \gen_DIFF_HB_TS[6].DIFF_HB_TS               |DirectionChange_43               |     8|
+|54    |      \gen_DIFF_HB_TS[7].DIFF_HB_TS               |DirectionChange_44               |     8|
+|55    |      \gen_DIFF_HB_TS[8].DIFF_HB_TS               |DirectionChange_45               |     8|
+|56    |      \gen_DIFF_HB_TS[9].DIFF_HB_TS               |DirectionChange_46               |     8|
+|57    |      \gen_DIFF_LA_32_33_TS[32].DIFF_LA_32_33_TS  |DirectionChange_47               |     8|
+|58    |      \gen_DIFF_LA_32_33_TS[33].DIFF_LA_32_33_TS  |DirectionChange_48               |     8|
+|59    |      \gen_DIFF_LA_TS[0].DIFF_LA_TS               |DirectionChange_49               |     8|
+|60    |      \gen_DIFF_LA_TS[10].DIFF_LA_TS              |DirectionChange_50               |     8|
+|61    |      \gen_DIFF_LA_TS[11].DIFF_LA_TS              |DirectionChange_51               |     8|
+|62    |      \gen_DIFF_LA_TS[12].DIFF_LA_TS              |DirectionChange_52               |     8|
+|63    |      \gen_DIFF_LA_TS[13].DIFF_LA_TS              |DirectionChange_53               |     8|
+|64    |      \gen_DIFF_LA_TS[14].DIFF_LA_TS              |DirectionChange_54               |     8|
+|65    |      \gen_DIFF_LA_TS[15].DIFF_LA_TS              |DirectionChange_55               |     8|
+|66    |      \gen_DIFF_LA_TS[16].DIFF_LA_TS              |DirectionChange_56               |     8|
+|67    |      \gen_DIFF_LA_TS[17].DIFF_LA_TS              |DirectionChange_57               |     8|
+|68    |      \gen_DIFF_LA_TS[18].DIFF_LA_TS              |DirectionChange_58               |     8|
+|69    |      \gen_DIFF_LA_TS[19].DIFF_LA_TS              |DirectionChange_59               |     8|
+|70    |      \gen_DIFF_LA_TS[1].DIFF_LA_TS               |DirectionChange_60               |     8|
+|71    |      \gen_DIFF_LA_TS[20].DIFF_LA_TS              |DirectionChange_61               |     8|
+|72    |      \gen_DIFF_LA_TS[21].DIFF_LA_TS              |DirectionChange_62               |     8|
+|73    |      \gen_DIFF_LA_TS[22].DIFF_LA_TS              |DirectionChange_63               |     8|
+|74    |      \gen_DIFF_LA_TS[23].DIFF_LA_TS              |DirectionChange_64               |     8|
+|75    |      \gen_DIFF_LA_TS[24].DIFF_LA_TS              |DirectionChange_65               |     8|
+|76    |      \gen_DIFF_LA_TS[25].DIFF_LA_TS              |DirectionChange_66               |     8|
+|77    |      \gen_DIFF_LA_TS[26].DIFF_LA_TS              |DirectionChange_67               |     8|
+|78    |      \gen_DIFF_LA_TS[27].DIFF_LA_TS              |DirectionChange_68               |     8|
+|79    |      \gen_DIFF_LA_TS[28].DIFF_LA_TS              |DirectionChange_69               |     8|
+|80    |      \gen_DIFF_LA_TS[29].DIFF_LA_TS              |DirectionChange_70               |     8|
+|81    |      \gen_DIFF_LA_TS[2].DIFF_LA_TS               |DirectionChange_71               |     8|
+|82    |      \gen_DIFF_LA_TS[30].DIFF_LA_TS              |DirectionChange_72               |     8|
+|83    |      \gen_DIFF_LA_TS[31].DIFF_LA_TS              |DirectionChange_73               |     8|
+|84    |      \gen_DIFF_LA_TS[3].DIFF_LA_TS               |DirectionChange_74               |     8|
+|85    |      \gen_DIFF_LA_TS[4].DIFF_LA_TS               |DirectionChange_75               |     8|
+|86    |      \gen_DIFF_LA_TS[5].DIFF_LA_TS               |DirectionChange_76               |     8|
+|87    |      \gen_DIFF_LA_TS[6].DIFF_LA_TS               |DirectionChange_77               |     8|
+|88    |      \gen_DIFF_LA_TS[7].DIFF_LA_TS               |DirectionChange_78               |     8|
+|89    |      \gen_DIFF_LA_TS[8].DIFF_LA_TS               |DirectionChange_79               |     8|
+|90    |      \gen_DIFF_LA_TS[9].DIFF_LA_TS               |DirectionChange_80               |     8|
+|91    |      wAvisTop_inst                               |wAvisTop                         | 80813|
+|92    |        L1_inst                                   |line_sensor_core                 | 20302|
+|93    |          adc_inst                                |line_sensor_adc_93               |  1795|
+|94    |          spi_inst                                |line_sensor_spi_94               |   245|
+|95    |            spi_master_inst                       |spi_master_95                    |   194|
+|96    |        L2_inst                                   |line_sensor_core_81              | 19978|
+|97    |          adc_inst                                |line_sensor_adc_90               |  1721|
+|98    |          spi_inst                                |line_sensor_spi_91               |   245|
+|99    |            spi_master_inst                       |spi_master_92                    |   194|
+|100   |        L3_inst                                   |line_sensor_core_82              | 19977|
+|101   |          adc_inst                                |line_sensor_adc_87               |  1719|
+|102   |          spi_inst                                |line_sensor_spi_88               |   246|
+|103   |            spi_master_inst                       |spi_master_89                    |   195|
+|104   |        L4_inst                                   |line_sensor_core_83              | 20162|
+|105   |          adc_inst                                |line_sensor_adc                  |  1754|
+|106   |          spi_inst                                |line_sensor_spi                  |   392|
+|107   |            spi_master_inst                       |spi_master                       |   218|
+|108   |        LS_Buffering_inst                         |line_sensor_buffering            |   227|
+|109   |          \gen_ls_ram[0].ram_lsX                  |dpRam                            |    13|
+|110   |          \gen_ls_ram[1].ram_lsX                  |dpRam_84                         |    13|
+|111   |          \gen_ls_ram[2].ram_lsX                  |dpRam_85                         |     1|
+|112   |          \gen_ls_ram[3].ram_lsX                  |dpRam_86                         |     1|
+|113   |        dmaSignalsGeneratorInst                   |dmaSignalsGenerator              |   167|
 +------+--------------------------------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:56 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:57 . Memory (MB): peak = 1336.977 ; gain = 649.039
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:02:41 . Memory (MB): peak = 1334.570 ; gain = 341.344
-Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:57 . Memory (MB): peak = 1334.570 ; gain = 646.902
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:52 ; elapsed = 00:02:43 . Memory (MB): peak = 1336.977 ; gain = 342.848
+Synthesis Optimization Complete : Time (s): cpu = 00:02:19 ; elapsed = 00:02:58 . Memory (MB): peak = 1336.977 ; gain = 649.039
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'pcie_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 10170 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 10183 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1382.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1383.633 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 81 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 80 instances
   LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-491 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+499 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:03:18 . Memory (MB): peak = 1382.574 ; gain = 994.500
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1382.574 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:38 ; elapsed = 00:03:18 . Memory (MB): peak = 1383.633 ; gain = 994.254
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1383.633 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/BB1-HTGK7/BB1-HTGK7.runs/synth_1/Top_Module.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1382.574 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1383.633 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep  7 11:36:23 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  8 16:11:49 2023...

@@ -1,14 +1,19 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[3].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
 |               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[7].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[6].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
 |               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[2].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[5].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
-|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst/gt_rx_phy_status_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[6].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst/gt_rx_status_q_reg[2]/D|
 |               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[4].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[3].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[5].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[7].GT_RX_VALID_FILTER_7x_inst/gt_rxvalid_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst/gt_rx_phy_status_q_reg/D|
 |               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rx_status_q_reg[1]/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rx_status_q_reg[2]/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rx_phy_status_q_reg/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[0].GT_RX_VALID_FILTER_7x_inst/gt_rx_status_q_reg[0]/D|
+|               clk_125mhz |               clk_125mhz |pcie_support_i/PCIe_IP_i/U0/inst/gt_top_i/gt_rx_valid_filter[1].GT_RX_VALID_FILTER_7x_inst/gt_rx_status_q_reg[0]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -102,10 +102,9 @@ architecture arch_imp of user_ip_registers_mainProjectTop is
     signal interrupt_reqSig    : std_logic;
 	signal dmaDataDepthReg     : std_logic_vector(DMA_DATA_WIDTH-1 downto 0);
 	signal WR_EN_rising        : std_logic;
-	signal RD_REQ_rising     : std_logic;
+	signal RD_REQ_rising       : std_logic;
 	signal RESET               : std_logic;
-	signal PWM_REG				: std_logic_vector(31 downto 0);
-    signal PWM_HIGH_TIME_REG	: std_logic_vector(31 downto 0);
+	signal lsr_cntrl_reg       : std_logic_vector(31 downto 0);
     --I/O SIGNALS
     signal MST_o       : std_logic;
     signal MCLK_o      : std_logic;
@@ -178,8 +177,8 @@ begin
 			DIFF_IO_LA_i_o <= (others => '0');
 			DIFF_IO_LA_HA_i_o <= (others => '0');
 			DIFF_IO_HB_i_o <= (others => '0');
-			DIFF_DIR_LA_reg <= x"00001170";
-			DIFF_DIR_LA_HA_reg <= x"00000100";
+			DIFF_DIR_LA_reg <= x"00001171";--x"00001170";
+			DIFF_DIR_LA_HA_reg <= x"00000133";--x"00000100";
 			DIFF_DIR_HB_reg <= x"00080008";
 			halfClkPerIn <= x"00000007";
 			mstHighTimeIn <= x"00003E12";
@@ -194,6 +193,7 @@ begin
 			ctrlRegIn <= (others  => '0');
 			dmaDataDepthReg <= b"0000010000000000";
 			interrupt_reqSig <= '0';
+			lsr_cntrl_reg(5 downto 0) <= (others => '0');
 
 	    else
 	      if (WR_EN_rising = '1') then
@@ -260,6 +260,9 @@ begin
 			  
 			  when x"29" => --DMA Data Depth
 				dmaDataDepthReg <= WR_DATA(DMA_DATA_WIDTH-1 downto 0);
+				
+              when x"2A" =>  --Laser control register (bits0-2: enable in, bits3-5: pulse in)
+                lsr_cntrl_reg(5 downto 0) <= WR_DATA(5 downto 0); 
 			
 
 	          when others => null;
@@ -388,6 +391,8 @@ begin
 		    reg_data_out <= bufferDebugSig;
 		  when x"29" =>
 		    reg_data_out <= x"0000" & dmaDataDepthReg;
+		  when x"2A" =>  --Laser control register (bits0-2: enable in, bits3-5: pulse in, bits6-8: enable out, bits 9-11: pulse out)
+		    reg_data_out <= lsr_cntrl_reg;
 	      when others =>
 	        reg_data_out  <= (others => '0');
 	    end case;
@@ -483,7 +488,7 @@ begin
 --FMC OUTPUTS. DEFAULT IS SET TO REGISTER/SOFTWARE CONTROL
 --REPLACE RIGHT SIDE OF SIGNAL MAPPING FOR SIGNALS CONTROLLED IN FPGA
 -----------------------------------------------------------------------	
-	DIFF_IO_LA_o(0) <= DIFF_IO_LA_i_o(0);
+	DIFF_IO_LA_o(0) <= lsr_cntrl_reg(11);--DIFF_IO_LA_i_o(0);
 	DIFF_IO_LA_o(1) <= DIFF_IO_LA_i_o(1);
 	DIFF_IO_LA_o(2) <= DIFF_IO_LA_i_o(2);
 	DIFF_IO_LA_o(3) <= DIFF_IO_LA_i_o(3);
@@ -491,7 +496,7 @@ begin
 	DIFF_IO_LA_o(5) <= MCLK_o;--DIFF_IO_LA_i_o(5);
 	DIFF_IO_LA_o(6) <= MST_o;--DIFF_IO_LA_i_o(6);
 	DIFF_IO_LA_o(7) <= DIFF_IO_LA_i_o(7);
-	DIFF_IO_LA_o(8) <= L4_CS_o;--DIFF_IO_LA_i_o(8);
+	DIFF_IO_LA_o(8) <= lsr_cntrl_reg(8);--L4_CS_o;--DIFF_IO_LA_i_o(8);
 	DIFF_IO_LA_o(9) <= DIFF_IO_LA_i_o(9);
 	DIFF_IO_LA_o(10) <= DIFF_IO_LA_i_o(10);
 	DIFF_IO_LA_o(11) <= DIFF_IO_LA_i_o(11);
@@ -518,12 +523,12 @@ begin
 	DIFF_IO_LA_o(32) <= DIFF_IO_LA_HA_i_o(24);
 	DIFF_IO_LA_o(33) <= DIFF_IO_LA_HA_i_o(25);
 	
-	DIFF_IO_HA_o(0) <= DIFF_IO_LA_HA_i_o(0);
-	DIFF_IO_HA_o(1) <= DIFF_IO_LA_HA_i_o(1);
+	DIFF_IO_HA_o(0) <= lsr_cntrl_reg(9);--DIFF_IO_LA_HA_i_o(0);
+	DIFF_IO_HA_o(1) <= lsr_cntrl_reg(6);--DIFF_IO_LA_HA_i_o(1);
 	DIFF_IO_HA_o(2) <= DIFF_IO_LA_HA_i_o(2);
 	DIFF_IO_HA_o(3) <= DIFF_IO_LA_HA_i_o(3);
-	DIFF_IO_HA_o(4) <= DIFF_IO_LA_HA_i_o(4);
-	DIFF_IO_HA_o(5) <= DIFF_IO_LA_HA_i_o(5);
+	DIFF_IO_HA_o(4) <= lsr_cntrl_reg(10);--DIFF_IO_LA_HA_i_o(4);
+	DIFF_IO_HA_o(5) <= lsr_cntrl_reg(7);--DIFF_IO_LA_HA_i_o(5);
 	DIFF_IO_HA_o(6) <= DIFF_IO_LA_HA_i_o(6);
 	DIFF_IO_HA_o(7) <= DIFF_IO_LA_HA_i_o(7);
 	DIFF_IO_HA_o(8) <= MOSI_o;--DIFF_IO_LA_HA_i_o(8);
@@ -738,9 +743,9 @@ GEN_ARRAY: for I in 0 to 2 generate
             RESET => RESET,--	: in std_logic;
             
             lsr_enable_in => lsr_cntrl_reg(I),   -- : in std_logic;
-		    lsr_pulse_in => lsr_cntrl_reg(I+2),   -- : in std_logic;
-            lsr_enable_out    : out std_logic;
-            lsr_pulse_out      : out std_logic
+		    lsr_pulse_in => lsr_cntrl_reg(I+3),   -- : in std_logic;
+            lsr_enable_out => lsr_cntrl_reg(I+6),   --    : out std_logic;
+            lsr_pulse_out => lsr_cntrl_reg(I+9)   --      : out std_logic
         );
 end generate GEN_ARRAY;
 	
